@@ -1,0 +1,242 @@
+	MapID	Code	name	name_long	continent	economy	income_grp	index	Entity	Date	Total	Daily	Catog
+0	-99	IOA	Indian Ocean Ter.	Indian Ocean Territories	Asia	2. Developed region: nonG7	2. High income: nonOECD						
+1	-99	KAS	Siachen Glacier	Siachen Glacier	Asia	6. Developing region	4. Lower middle income						
+2	-99	KOS	Kosovo	Kosovo	Europe	6. Developing region	4. Lower middle income						
+3	-99	SOL	Somaliland	Somaliland	Africa	6. Developing region	4. Lower middle income						
+4	-99	CYN	N. Cyprus	Northern Cyprus	Asia	6. Developing region	3. Upper middle income						
+5	036	ATC	Ashmore and Cartier Is.	Ashmore and Cartier Islands	Oceania	7. Least developed region	5. Low income						
+6	533	ABW	Aruba	Aruba	North America	6. Developing region	2. High income: nonOECD	621.0	Aruba	16-Apr-20	1.0	1.0	0.0
+7	004	AFG	Afghanistan	Afghanistan	Asia	7. Least developed region	5. Low income	97.0	Afghanistan	16-Apr-20	25.0	2.0	0.0
+8	024	AGO	Angola	Angola	Africa	7. Least developed region	3. Upper middle income	407.0	Angola	16-Apr-20	2.0	0.0	0.0
+9	660	AIA	Anguilla	Anguilla	North America	6. Developing region	3. Upper middle income	428.0	Anguilla	16-Apr-20	0.0	0.0	
+10	248	ALD	Aland	Aland Islands	Europe	2. Developed region: nonG7	1. High income: OECD						
+11	008	ALB	Albania	Albania	Europe	6. Developing region	4. Lower middle income	244.0	Albania	16-Apr-20	25.0	1.0	0.0
+12	020	AND	Andorra	Andorra	Europe	2. Developed region: nonG7	2. High income: nonOECD	381.0	Andorra	16-Apr-20	33.0	2.0	0.0
+13	784	ARE	United Arab Emirates	United Arab Emirates	Asia	6. Developing region	2. High income: nonOECD	11802.0	United Arab Emirates	16-Apr-20	33.0	5.0	0.0
+14	032	ARG	Argentina	Argentina	South America	5. Emerging region: G20	3. Upper middle income	497.0	Argentina	16-Apr-20	109.0	4.0	100.0
+15	051	ARM	Armenia	Armenia	Asia	6. Developing region	4. Lower middle income	596.0	Armenia	16-Apr-20	18.0	1.0	0.0
+16	016	ASM	American Samoa	American Samoa	Oceania	6. Developing region	3. Upper middle income						
+17	010	ATA	Antarctica	Antarctica	Antarctica	6. Developing region	2. High income: nonOECD						
+18	260	ATF	Fr. S. Antarctic Lands	French Southern and Antarctic Lands	Seven seas (open ocean)	6. Developing region	2. High income: nonOECD						
+19	028	ATG	Antigua and Barb.	Antigua and Barbuda	North America	6. Developing region	3. Upper middle income	456.0	Antigua and Barbuda	16-Apr-20	2.0	0.0	0.0
+20	036	AUS	Australia	Australia	Oceania	2. Developed region: nonG7	1. High income: OECD	945.0	Australia	16-Apr-20	63.0	2.0	50.0
+21	040	AUT	Austria	Austria	Europe	2. Developed region: nonG7	1. High income: OECD	1053.0	Austria	16-Apr-20	393.0	9.0	100.0
+22	031	AZE	Azerbaijan	Azerbaijan	Asia	6. Developing region	3. Upper middle income	1154.0	Azerbaijan	16-Apr-20	13.0	0.0	0.0
+23	108	BDI	Burundi	Burundi	Africa	7. Least developed region	5. Low income	2032.0	Burundi	16-Apr-20	1.0	0.0	0.0
+24	056	BEL	Belgium	Belgium	Europe	2. Developed region: nonG7	1. High income: OECD	1562.0	Belgium	16-Apr-20	4440.0	283.0	1000.0
+25	204	BEN	Benin	Benin	Africa	7. Least developed region	5. Low income	1617.0	Benin	16-Apr-20	1.0	0.0	0.0
+26	854	BFA	Burkina Faso	Burkina Faso	Africa	7. Least developed region	5. Low income	2016.0	Burkina Faso	16-Apr-20	32.0	2.0	0.0
+27	050	BGD	Bangladesh	Bangladesh	Asia	7. Least developed region	5. Low income	1324.0	Bangladesh	16-Apr-20	50.0	4.0	0.0
+28	100	BGR	Bulgaria	Bulgaria	Europe	2. Developed region: nonG7	3. Upper middle income	1981.0	Bulgaria	16-Apr-20	36.0	1.0	0.0
+29	048	BHR	Bahrain	Bahrain	Asia	6. Developing region	2. High income: nonOECD	1291.0	Bahrain	16-Apr-20	7.0	0.0	0.0
+30	044	BHS	Bahamas	Bahamas	North America	6. Developing region	2. High income: nonOECD	1184.0	Bahamas	16-Apr-20	8.0	0.0	0.0
+31	070	BIH	Bosnia and Herz.	Bosnia and Herzegovina	Europe	6. Developing region	3. Upper middle income	1764.0	Bosnia and Herzegovina	16-Apr-20	40.0	1.0	0.0
+32	652	BLM	St-Barthélemy	Saint-Barthélemy	North America	2. Developed region: nonG7	1. High income: OECD						
+33	112	BLR	Belarus	Belarus	Europe	6. Developing region	3. Upper middle income	1454.0	Belarus	16-Apr-20	36.0	3.0	0.0
+34	084	BLZ	Belize	Belize	North America	6. Developing region	4. Lower middle income	1586.0	Belize	16-Apr-20	2.0	0.0	0.0
+35	060	BMU	Bermuda	Bermuda	North America	2. Developed region: nonG7	2. High income: nonOECD	1645.0	Bermuda	16-Apr-20	5.0	0.0	0.0
+36	068	BOL	Bolivia	Bolivia	South America	5. Emerging region: G20	4. Lower middle income	1714.0	Bolivia	16-Apr-20	29.0	1.0	0.0
+37	076	BRA	Brazil	Brazil	South America	3. Emerging region: BRIC	3. Upper middle income	1885.0	Brazil	16-Apr-20	1736.0	204.0	1000.0
+38	052	BRB	Barbados	Barbados	North America	6. Developing region	2. High income: nonOECD	1354.0	Barbados	16-Apr-20	5.0	0.0	0.0
+39	096	BRN	Brunei	Brunei Darussalam	Asia	6. Developing region	2. High income: nonOECD	1943.0	Brunei	16-Apr-20	1.0	0.0	0.0
+40	064	BTN	Bhutan	Bhutan	Asia	7. Least developed region	4. Lower middle income	1679.0	Bhutan	16-Apr-20	0.0	0.0	
+41	072	BWA	Botswana	Botswana	Africa	6. Developing region	3. Upper middle income	1780.0	Botswana	16-Apr-20	1.0	0.0	0.0
+42	140	CAF	Central African Rep.	Central African Republic	Africa	7. Least developed region	5. Low income	2361.0	Central African Republic	16-Apr-20	0.0	0.0	
+43	124	CAN	Canada	Canada	North America	1. Developed region: G7	1. High income: OECD	2274.0	Canada	16-Apr-20	1010.0	107.0	1000.0
+44	756	CHE	Switzerland	Switzerland	Europe	2. Developed region: nonG7	1. High income: OECD	11186.0	Switzerland	16-Apr-20	973.0	73.0	500.0
+45	152	CHL	Chile	Chile	South America	5. Emerging region: G20	3. Upper middle income	2432.0	Chile	16-Apr-20	94.0	2.0	50.0
+46	156	CHN	China	China	Asia	3. Emerging region: BRIC	3. Upper middle income	2540.0	China	16-Apr-20	3346.0	0.0	1000.0
+47	384	CIV	Côte d'Ivoire	Côte d'Ivoire	Africa	6. Developing region	4. Lower middle income	2683.0	Cote d'Ivoire	16-Apr-20	6.0	0.0	0.0
+48	120	CMR	Cameroon	Cameroon	Africa	6. Developing region	4. Lower middle income	2166.0	Cameroon	16-Apr-20	17.0	0.0	0.0
+49	180	COD	Dem. Rep. Congo	Democratic Republic of the Congo	Africa	7. Least developed region	5. Low income	3024.0	Democratic Republic of Congo	16-Apr-20	22.0	1.0	0.0
+50	178	COG	Congo	Republic of Congo	Africa	6. Developing region	4. Lower middle income	2609.0	Congo	16-Apr-20	5.0	0.0	0.0
+51	184	COK	Cook Is.	Cook Islands	Oceania	6. Developing region	3. Upper middle income						
+52	170	COL	Colombia	Colombia	South America	6. Developing region	3. Upper middle income	2577.0	Colombia	16-Apr-20	131.0	4.0	100.0
+53	174	COM	Comoros	Comoros	Africa	7. Least developed region	5. Low income						
+54	132	CPV	Cape Verde	Cape Verde	Africa	6. Developing region	4. Lower middle income	2301.0	Cape Verde	16-Apr-20	1.0	0.0	0.0
+55	188	CRI	Costa Rica	Costa Rica	North America	5. Emerging region: G20	3. Upper middle income	2649.0	Costa Rica	16-Apr-20	4.0	1.0	0.0
+56	192	CUB	Cuba	Cuba	North America	5. Emerging region: G20	3. Upper middle income	2821.0	Cuba	16-Apr-20	24.0	3.0	0.0
+57	531	CUW	Curaçao	Curaçao	North America	6. Developing region	2. High income: nonOECD	2845.0	Curacao	16-Apr-20	1.0	0.0	0.0
+58	136	CYM	Cayman Is.	Cayman Islands	North America	5. Emerging region: G20	2. High income: nonOECD	2329.0	Cayman Islands	16-Apr-20	1.0	0.0	0.0
+59	196	CYP	Cyprus	Cyprus	Asia	6. Developing region	2. High income: nonOECD	2881.0	Cyprus	16-Apr-20	17.0	0.0	0.0
+60	203	CZE	Czech Rep.	Czech Republic	Europe	2. Developed region: nonG7	1. High income: OECD	2989.0	Czech Republic	16-Apr-20	166.0	5.0	100.0
+61	276	DEU	Germany	Germany	Europe	1. Developed region: G7	1. High income: OECD	4519.0	Germany	16-Apr-20	3569.0	315.0	1000.0
+62	262	DJI	Djibouti	Djibouti	Africa	7. Least developed region	4. Lower middle income	3161.0	Djibouti	16-Apr-20	2.0	0.0	0.0
+63	212	DMA	Dominica	Dominica	North America	6. Developing region	3. Upper middle income	3186.0	Dominica	16-Apr-20	0.0	0.0	
+64	208	DNK	Denmark	Denmark	Europe	2. Developed region: nonG7	1. High income: OECD	3132.0	Denmark	16-Apr-20	309.0	10.0	100.0
+65	214	DOM	Dominican Rep.	Dominican Republic	North America	6. Developing region	3. Upper middle income	3285.0	Dominican Republic	16-Apr-20	189.0	6.0	100.0
+66	012	DZA	Algeria	Algeria	Africa	6. Developing region	3. Upper middle income	347.0	Algeria	16-Apr-20	336.0	10.0	100.0
+67	218	ECU	Ecuador	Ecuador	South America	6. Developing region	3. Upper middle income	3388.0	Ecuador	16-Apr-20	388.0	33.0	100.0
+68	818	EGY	Egypt	Egypt	Africa	5. Emerging region: G20	4. Lower middle income	3492.0	Egypt	16-Apr-20	183.0	5.0	100.0
+69	232	ERI	Eritrea	Eritrea	Africa	7. Least developed region	5. Low income	3580.0	Eritrea	16-Apr-20	0.0	0.0	
+70	732	SAH	W. Sahara	Western Sahara	Africa	7. Least developed region	5. Low income						
+71	724	ESP	Spain	Spain	Europe	2. Developed region: nonG7	1. High income: OECD	10776.0	Spain	16-Apr-20	18579.0	523.0	10000.0
+72	233	EST	Estonia	Estonia	Europe	2. Developed region: nonG7	1. High income: OECD	3683.0	Estonia	16-Apr-20	35.0	4.0	0.0
+73	231	ETH	Ethiopia	Ethiopia	Africa	7. Least developed region	5. Low income	3717.0	Ethiopia	16-Apr-20	3.0	0.0	0.0
+74	246	FIN	Finland	Finland	Europe	2. Developed region: nonG7	1. High income: OECD	4105.0	Finland	16-Apr-20	72.0	8.0	50.0
+75	242	FJI	Fiji	Fiji	Oceania	6. Developing region	4. Lower middle income	4002.0	Fiji	16-Apr-20	0.0	0.0	
+76	238	FLK	Falkland Is.	Falkland Islands	South America	2. Developed region: nonG7	1. High income: OECD	3974.0	Falkland Islands	16-Apr-20	0.0	0.0	
+77	250	FRA	France	France	Europe	1. Developed region: G7	1. High income: OECD	4213.0	France	16-Apr-20	17167.0	1438.0	10000.0
+78	234	FRO	Faeroe Is.	Faeroe Islands	Europe	2. Developed region: nonG7	2. High income: nonOECD	3961.0	Faeroe Islands	16-Apr-20	0.0	0.0	
+79	583	FSM	Micronesia	Federated States of Micronesia	Oceania	6. Developing region	4. Lower middle income						
+80	266	GAB	Gabon	Gabon	Africa	6. Developing region	3. Upper middle income	4276.0	Gabon	16-Apr-20	1.0	0.0	0.0
+81	826	GBR	United Kingdom	United Kingdom	Europe	1. Developed region: G7	1. High income: OECD	11910.0	United Kingdom	16-Apr-20	12868.0	761.0	10000.0
+82	268	GEO	Georgia	Georgia	Asia	6. Developing region	4. Lower middle income	4411.0	Georgia	16-Apr-20	3.0	0.0	0.0
+83	831	GGY	Guernsey	Guernsey	Europe	2. Developed region: nonG7	2. High income: nonOECD	4830.0	Guernsey	16-Apr-20	7.0	0.0	0.0
+84	288	GHA	Ghana	Ghana	Africa	6. Developing region	4. Lower middle income	4553.0	Ghana	16-Apr-20	8.0	0.0	0.0
+85	324	GIN	Guinea	Guinea	Africa	7. Least developed region	5. Low income	4863.0	Guinea	16-Apr-20	1.0	1.0	0.0
+86	270	GMB	Gambia	The Gambia	Africa	7. Least developed region	5. Low income	4306.0	Gambia	16-Apr-20	1.0	0.0	0.0
+87	624	GNB	Guinea-Bissau	Guinea-Bissau	Africa	7. Least developed region	5. Low income	4884.0	Guinea-Bissau	16-Apr-20	0.0	0.0	
+88	226	GNQ	Eq. Guinea	Equatorial Guinea	Africa	7. Least developed region	2. High income: nonOECD	3554.0	Equatorial Guinea	16-Apr-20	0.0	0.0	
+89	300	GRC	Greece	Greece	Europe	2. Developed region: nonG7	1. High income: OECD	4687.0	Greece	16-Apr-20	102.0	1.0	100.0
+90	308	GRD	Grenada	Grenada	North America	6. Developing region	3. Upper middle income	4740.0	Grenada	16-Apr-20	0.0	0.0	
+91	304	GRL	Greenland	Greenland	North America	2. Developed region: nonG7	2. High income: nonOECD	4715.0	Greenland	16-Apr-20	0.0	0.0	
+92	320	GTM	Guatemala	Guatemala	North America	6. Developing region	4. Lower middle income	4802.0	Guatemala	16-Apr-20	5.0	0.0	0.0
+93	316	GUM	Guam	Guam	Oceania	6. Developing region	2. High income: nonOECD	4769.0	Guam	16-Apr-20	5.0	0.0	0.0
+94	328	GUY	Guyana	Guyana	South America	6. Developing region	4. Lower middle income	4917.0	Guyana	16-Apr-20	6.0	0.0	0.0
+95	344	HKG	Hong Kong	Hong Kong	Asia	6. Developing region	2. High income: nonOECD						
+96	334	HMD	Heard I. and McDonald Is.	Heard I. and McDonald Islands	Seven seas (open ocean)	7. Least developed region	5. Low income						
+97	340	HND	Honduras	Honduras	North America	6. Developing region	4. Lower middle income	5087.0	Honduras	16-Apr-20	35.0	4.0	0.0
+98	191	HRV	Croatia	Croatia	Europe	2. Developed region: nonG7	2. High income: nonOECD	2788.0	Croatia	16-Apr-20	34.0	3.0	0.0
+99	332	HTI	Haiti	Haiti	North America	7. Least developed region	5. Low income	4945.0	Haiti	16-Apr-20	3.0	0.0	0.0
+100	348	HUN	Hungary	Hungary	Europe	2. Developed region: nonG7	1. High income: OECD	5129.0	Hungary	16-Apr-20	142.0	8.0	100.0
+101	360	IDN	Indonesia	Indonesia	Asia	4. Emerging region: MIKT	4. Lower middle income	5445.0	Indonesia	16-Apr-20	469.0	10.0	100.0
+102	833	IMN	Isle of Man	Isle of Man	Europe	2. Developed region: nonG7	2. High income: nonOECD	5856.0	Isle of Man	16-Apr-20	2.0	0.0	0.0
+103	356	IND	India	India	Asia	3. Emerging region: BRIC	4. Lower middle income	5344.0	India	16-Apr-20	414.0	37.0	100.0
+104	086	IOT	Br. Indian Ocean Ter.	British Indian Ocean Territory	Seven seas (open ocean)	2. Developed region: nonG7	2. High income: nonOECD						
+105	372	IRL	Ireland	Ireland	Europe	2. Developed region: nonG7	1. High income: OECD	5829.0	Ireland	16-Apr-20	444.0	38.0	100.0
+106	364	IRN	Iran	Iran	Asia	5. Emerging region: G20	3. Upper middle income	5617.0	Iran	16-Apr-20	4777.0	94.0	1000.0
+107	368	IRQ	Iraq	Iraq	Asia	6. Developing region	4. Lower middle income	5723.0	Iraq	16-Apr-20	79.0	1.0	50.0
+108	352	ISL	Iceland	Iceland	Europe	2. Developed region: nonG7	1. High income: OECD	5237.0	Iceland	16-Apr-20	8.0	0.0	0.0
+109	376	ISR	Israel	Israel	Asia	2. Developed region: nonG7	1. High income: OECD	5961.0	Israel	16-Apr-20	130.0	7.0	100.0
+110	380	ITA	Italy	Italy	Europe	1. Developed region: G7	1. High income: OECD	6069.0	Italy	16-Apr-20	21647.0	578.0	20000.0
+111	388	JAM	Jamaica	Jamaica	North America	6. Developing region	3. Upper middle income	6104.0	Jamaica	16-Apr-20	5.0	0.0	0.0
+112	832	JEY	Jersey	Jersey	Europe	2. Developed region: nonG7	2. High income: nonOECD	6240.0	Jersey	16-Apr-20	6.0	2.0	0.0
+113	400	JOR	Jordan	Jordan	Asia	6. Developing region	3. Upper middle income	6275.0	Jordan	16-Apr-20	7.0	0.0	0.0
+114	392	JPN	Japan	Japan	Asia	1. Developed region: G7	1. High income: OECD	6212.0	Japan	16-Apr-20	136.0	17.0	100.0
+115	398	KAZ	Kazakhstan	Kazakhstan	Asia	6. Developing region	3. Upper middle income	6308.0	Kazakhstan	16-Apr-20	16.0	2.0	0.0
+116	404	KEN	Kenya	Kenya	Africa	5. Emerging region: G20	5. Low income	6342.0	Kenya	16-Apr-20	10.0	1.0	0.0
+117	417	KGZ	Kyrgyzstan	Kyrgyzstan	Asia	6. Developing region	5. Low income	6508.0	Kyrgyzstan	16-Apr-20	5.0	0.0	0.0
+118	116	KHM	Cambodia	Cambodia	Asia	7. Least developed region	5. Low income	2131.0	Cambodia	16-Apr-20	0.0	0.0	
+119	296	KIR	Kiribati	Kiribati	Oceania	7. Least developed region	4. Lower middle income						
+120	659	KNA	St. Kitts and Nevis	Saint Kitts and Nevis	North America	6. Developing region	2. High income: nonOECD	9819.0	Saint Kitts and Nevis	16-Apr-20	0.0	0.0	
+121	410	KOR	Korea	Republic of Korea	Asia	4. Emerging region: MIKT	1. High income: OECD	10657.0	South Korea	16-Apr-20	229.0	4.0	100.0
+122	414	KWT	Kuwait	Kuwait	Asia	6. Developing region	2. High income: nonOECD	6479.0	Kuwait	16-Apr-20	3.0	0.0	0.0
+123	418	LAO	Lao PDR	Lao PDR	Asia	7. Least developed region	4. Lower middle income	6531.0	Laos	16-Apr-20	0.0	0.0	
+124	422	LBN	Lebanon	Lebanon	Asia	6. Developing region	3. Upper middle income	6676.0	Lebanon	16-Apr-20	21.0	0.0	0.0
+125	430	LBR	Liberia	Liberia	Africa	7. Least developed region	5. Low income	6707.0	Liberia	16-Apr-20	6.0	0.0	0.0
+126	434	LBY	Libya	Libya	Africa	6. Developing region	3. Upper middle income	6730.0	Libya	16-Apr-20	1.0	0.0	0.0
+127	662	LCA	Saint Lucia	Saint Lucia	North America	6. Developing region	3. Upper middle income	9852.0	Saint Lucia	16-Apr-20	0.0	0.0	
+128	438	LIE	Liechtenstein	Liechtenstein	Europe	2. Developed region: nonG7	2. High income: nonOECD	6767.0	Liechtenstein	16-Apr-20	1.0	0.0	0.0
+129	144	LKA	Sri Lanka	Sri Lanka	Asia	6. Developing region	4. Lower middle income	10875.0	Sri Lanka	16-Apr-20	7.0	0.0	0.0
+130	426	LSO	Lesotho	Lesotho	Africa	7. Least developed region	4. Lower middle income						
+131	440	LTU	Lithuania	Lithuania	Europe	2. Developed region: nonG7	3. Upper middle income	6866.0	Lithuania	16-Apr-20	29.0	5.0	0.0
+132	442	LUX	Luxembourg	Luxembourg	Europe	2. Developed region: nonG7	1. High income: OECD	7183.0	Luxembourg	16-Apr-20	69.0	2.0	50.0
+133	428	LVA	Latvia	Latvia	Europe	2. Developed region: nonG7	3. Upper middle income	6572.0	Latvia	16-Apr-20	5.0	0.0	0.0
+134	446	MAC	Macao	Macao	Asia	6. Developing region	2. High income: nonOECD						
+135	663	MAF	St-Martin	Saint-Martin	North America	6. Developing region	2. High income: nonOECD						
+136	504	MAR	Morocco	Morocco	Africa	6. Developing region	4. Lower middle income	7949.0	Morocco	16-Apr-20	127.0	1.0	100.0
+137	492	MCO	Monaco	Monaco	Europe	2. Developed region: nonG7	2. High income: nonOECD	7823.0	Monaco	16-Apr-20	3.0	1.0	0.0
+138	498	MDA	Moldova	Moldova	Europe	6. Developing region	4. Lower middle income	7727.0	Moldova	16-Apr-20	46.0	6.0	0.0
+139	450	MDG	Madagascar	Madagascar	Africa	7. Least developed region	5. Low income	7309.0	Madagascar	16-Apr-20	0.0	0.0	
+140	462	MDV	Maldives	Maldives	Seven seas (open ocean)	6. Developing region	3. Upper middle income	7468.0	Maldives	16-Apr-20	0.0	0.0	
+141	484	MEX	Mexico	Mexico	North America	4. Emerging region: MIKT	3. Upper middle income	7689.0	Mexico	16-Apr-20	449.0	43.0	100.0
+142	584	MHL	Marshall Is.	Marshall Islands	Oceania	6. Developing region	4. Lower middle income						
+143	807	MKD	Macedonia	Macedonia	Europe	6. Developing region	3. Upper middle income	7282.0	Macedonia	16-Apr-20	45.0	1.0	0.0
+144	466	MLI	Mali	Mali	Africa	7. Least developed region	5. Low income	7490.0	Mali	16-Apr-20	13.0	0.0	0.0
+145	470	MLT	Malta	Malta	Europe	2. Developed region: nonG7	2. High income: nonOECD	7528.0	Malta	16-Apr-20	3.0	0.0	0.0
+146	104	MMR	Myanmar	Myanmar	Asia	7. Least developed region	5. Low income	7999.0	Myanmar	16-Apr-20	4.0	0.0	0.0
+147	499	MNE	Montenegro	Montenegro	Europe	6. Developing region	3. Upper middle income	7885.0	Montenegro	16-Apr-20	4.0	0.0	0.0
+148	496	MNG	Mongolia	Mongolia	Asia	6. Developing region	4. Lower middle income	7855.0	Mongolia	16-Apr-20	0.0	0.0	
+149	580	MNP	N. Mariana Is.	Northern Mariana Islands	Oceania	6. Developing region	2. High income: nonOECD	8639.0	Northern Mariana Islands	16-Apr-20	2.0	0.0	0.0
+150	508	MOZ	Mozambique	Mozambique	Africa	7. Least developed region	5. Low income	7974.0	Mozambique	16-Apr-20	0.0	0.0	
+151	478	MRT	Mauritania	Mauritania	Africa	7. Least developed region	5. Low income	7561.0	Mauritania	16-Apr-20	1.0	0.0	0.0
+152	500	MSR	Montserrat	Montserrat	North America	6. Developing region	4. Lower middle income	7911.0	Montserrat	16-Apr-20	0.0	0.0	
+153	480	MUS	Mauritius	Mauritius	Seven seas (open ocean)	6. Developing region	3. Upper middle income	7589.0	Mauritius	16-Apr-20	9.0	0.0	0.0
+154	454	MWI	Malawi	Malawi	Africa	7. Least developed region	5. Low income	7323.0	Malawi	16-Apr-20	2.0	0.0	0.0
+155	458	MYS	Malaysia	Malaysia	Asia	6. Developing region	3. Upper middle income	7430.0	Malaysia	16-Apr-20	83.0	1.0	50.0
+156	516	NAM	Namibia	Namibia	Africa	6. Developing region	3. Upper middle income	8032.0	Namibia	16-Apr-20	0.0	0.0	
+157	540	NCL	New Caledonia	New Caledonia	Oceania	6. Developing region	2. High income: nonOECD	8262.0	New Caledonia	16-Apr-20	0.0	0.0	
+158	562	NER	Niger	Niger	Africa	7. Least developed region	5. Low income	8417.0	Niger	16-Apr-20	14.0	0.0	0.0
+159	574	NFK	Norfolk Island	Norfolk Island	Oceania	6. Developing region	4. Lower middle income						
+160	566	NGA	Nigeria	Nigeria	Africa	5. Emerging region: G20	4. Lower middle income	8514.0	Nigeria	16-Apr-20	12.0	1.0	0.0
+161	558	NIC	Nicaragua	Nicaragua	North America	6. Developing region	4. Lower middle income	8390.0	Nicaragua	16-Apr-20	1.0	0.0	0.0
+162	570	NIU	Niue	Niue	Oceania	6. Developing region	3. Upper middle income						
+163	528	NLD	Netherlands	Netherlands	Europe	2. Developed region: nonG7	1. High income: OECD	8235.0	Netherlands	16-Apr-20	3134.0	189.0	1000.0
+164	578	NOR	Norway	Norway	Europe	2. Developed region: nonG7	1. High income: OECD	8747.0	Norway	16-Apr-20	130.0	3.0	100.0
+165	524	NPL	Nepal	Nepal	Asia	7. Least developed region	5. Low income	8127.0	Nepal	16-Apr-20	0.0	0.0	
+166	520	NRU	Nauru	Nauru	Oceania	6. Developing region	4. Lower middle income						
+167	554	NZL	New Zealand	New Zealand	Oceania	2. Developed region: nonG7	1. High income: OECD	8361.0	New Zealand	16-Apr-20	9.0	0.0	0.0
+168	512	OMN	Oman	Oman	Asia	6. Developing region	2. High income: nonOECD	8957.0	Oman	16-Apr-20	4.0	0.0	0.0
+169	586	PAK	Pakistan	Pakistan	Asia	5. Emerging region: G20	4. Lower middle income	9060.0	Pakistan	16-Apr-20	124.0	17.0	100.0
+170	591	PAN	Panama	Panama	North America	6. Developing region	3. Upper middle income	9137.0	Panama	16-Apr-20	103.0	8.0	100.0
+171	612	PCN	Pitcairn Is.	Pitcairn Islands	Oceania	7. Least developed region	5. Low income						
+172	604	PER	Peru	Peru	South America	5. Emerging region: G20	3. Upper middle income	9240.0	Peru	16-Apr-20	254.0	24.0	100.0
+173	608	PHL	Philippines	Philippines	Asia	5. Emerging region: G20	4. Lower middle income	9344.0	Philippines	16-Apr-20	349.0	14.0	100.0
+174	585	PLW	Palau	Palau	Oceania	6. Developing region	3. Upper middle income						
+175	598	PNG	Papua New Guinea	Papua New Guinea	Oceania	6. Developing region	4. Lower middle income	9164.0	Papua New Guinea	16-Apr-20	0.0	0.0	
+176	616	POL	Poland	Poland	Europe	2. Developed region: nonG7	1. High income: OECD	9386.0	Poland	16-Apr-20	286.0	23.0	100.0
+177	630	PRI	Puerto Rico	Puerto Rico	North America	6. Developing region	2. High income: nonOECD	9451.0	Puerto Rico	16-Apr-20	51.0	6.0	50.0
+178	408	PRK	Dem. Rep. Korea	Dem. Rep. Korea	Asia	7. Least developed region	5. Low income						
+179	620	PRT	Portugal	Portugal	Europe	2. Developed region: nonG7	1. High income: OECD	9431.0	Portugal	16-Apr-20	599.0	32.0	500.0
+180	600	PRY	Paraguay	Paraguay	South America	5. Emerging region: G20	4. Lower middle income	9200.0	Paraguay	16-Apr-20	8.0	0.0	0.0
+181	275	PSX	Palestine	Palestine	Asia	6. Developing region	4. Lower middle income						
+182	258	PYF	Fr. Polynesia	French Polynesia	Oceania	6. Developing region	2. High income: nonOECD	4242.0	French Polynesia	16-Apr-20	0.0	0.0	
+183	634	QAT	Qatar	Qatar	Asia	6. Developing region	2. High income: nonOECD	9555.0	Qatar	16-Apr-20	7.0	0.0	0.0
+184	642	ROU	Romania	Romania	Europe	2. Developed region: nonG7	3. Upper middle income	9661.0	Romania	16-Apr-20	372.0	28.0	100.0
+185	643	RUS	Russia	Russian Federation	Europe	3. Emerging region: BRIC	3. Upper middle income	9764.0	Russia	16-Apr-20	198.0	28.0	100.0
+186	646	RWA	Rwanda	Rwanda	Africa	7. Least developed region	5. Low income	9797.0	Rwanda	16-Apr-20	0.0	0.0	
+187	682	SAU	Saudi Arabia	Saudi Arabia	Asia	2. Developed region: nonG7	2. High income: nonOECD	10033.0	Saudi Arabia	16-Apr-20	79.0	6.0	50.0
+188	729	SDN	Sudan	Sudan	Africa	6. Developing region	4. Lower middle income	10909.0	Sudan	16-Apr-20	5.0	0.0	0.0
+189	686	SEN	Senegal	Senegal	Africa	7. Least developed region	4. Lower middle income	10071.0	Senegal	16-Apr-20	2.0	0.0	0.0
+190	702	SGP	Singapore	Singapore	Asia	6. Developing region	2. High income: nonOECD	10266.0	Singapore	16-Apr-20	10.0	0.0	0.0
+191	239	SGS	S. Geo. and S. Sandw. Is.	South Georgia and South Sandwich Islands	Seven seas (open ocean)	7. Least developed region	5. Low income						
+192	654	SHN	Saint Helena	Saint Helena	Seven seas (open ocean)	6. Developing region	4. Lower middle income						
+193	090	SLB	Solomon Is.	Solomon Islands	Oceania	7. Least developed region	4. Lower middle income						
+194	694	SLE	Sierra Leone	Sierra Leone	Africa	7. Least developed region	5. Low income	10158.0	Sierra Leone	16-Apr-20	0.0	0.0	
+195	222	SLV	El Salvador	El Salvador	North America	6. Developing region	4. Lower middle income	3521.0	El Salvador	16-Apr-20	6.0	0.0	0.0
+196	674	SMR	San Marino	San Marino	Europe	2. Developed region: nonG7	2. High income: nonOECD	9983.0	San Marino	16-Apr-20	36.0	0.0	0.0
+197	706	SOM	Somalia	Somalia	Africa	7. Least developed region	5. Low income	10401.0	Somalia	16-Apr-20	5.0	3.0	0.0
+198	666	SPM	St. Pierre and Miquelon	Saint Pierre and Miquelon	North America	2. Developed region: nonG7	3. Upper middle income						
+199	688	SRB	Serbia	Serbia	Europe	6. Developing region	3. Upper middle income	10109.0	Serbia	16-Apr-20	99.0	15.0	50.0
+200	728	SDS	S. Sudan	South Sudan	Africa	7. Least developed region	5. Low income						
+201	678	STP	São Tomé and Principe	São Tomé and Principe	Africa	7. Least developed region	4. Lower middle income	9991.0	Sao Tome and Principe	16-Apr-20	0.0	0.0	
+202	740	SUR	Suriname	Suriname	South America	6. Developing region	3. Upper middle income	10937.0	Suriname	16-Apr-20	1.0	0.0	0.0
+203	703	SVK	Slovakia	Slovakia	Europe	2. Developed region: nonG7	1. High income: OECD	10328.0	Slovakia	16-Apr-20	6.0	4.0	0.0
+204	705	SVN	Slovenia	Slovenia	Europe	2. Developed region: nonG7	1. High income: OECD	10370.0	Slovenia	16-Apr-20	61.0	5.0	50.0
+205	752	SWE	Sweden	Sweden	Europe	2. Developed region: nonG7	1. High income: OECD	11078.0	Sweden	16-Apr-20	1203.0	170.0	1000.0
+206	748	SWZ	Swaziland	Swaziland	Africa	6. Developing region	4. Lower middle income	10970.0	Swaziland	16-Apr-20	0.0	0.0	
+207	534	SXM	Sint Maarten	Sint Maarten	North America	6. Developing region	2. High income: nonOECD	10288.0	Sint Maarten (Dutch part)	16-Apr-20	9.0	0.0	0.0
+208	690	SYC	Seychelles	Seychelles	Seven seas (open ocean)	6. Developing region	3. Upper middle income	10142.0	Seychelles	16-Apr-20	0.0	0.0	
+209	760	SYR	Syria	Syria	Asia	6. Developing region	4. Lower middle income	11211.0	Syria	16-Apr-20	2.0	0.0	0.0
+210	796	TCA	Turks and Caicos Is.	Turks and Caicos Islands	North America	6. Developing region	2. High income: nonOECD	11640.0	Turks and Caicos Islands	16-Apr-20	1.0	0.0	0.0
+211	148	TCD	Chad	Chad	Africa	7. Least developed region	5. Low income	2389.0	Chad	16-Apr-20	0.0	0.0	
+212	768	TGO	Togo	Togo	Africa	7. Least developed region	5. Low income	11509.0	Togo	16-Apr-20	3.0	0.0	0.0
+213	764	THA	Thailand	Thailand	Asia	5. Emerging region: G20	3. Upper middle income	11449.0	Thailand	16-Apr-20	46.0	3.0	0.0
+214	762	TJK	Tajikistan	Tajikistan	Asia	6. Developing region	5. Low income						
+215	795	TKM	Turkmenistan	Turkmenistan	Asia	6. Developing region	3. Upper middle income						
+216	626	TLS	Timor-Leste	Timor-Leste	Asia	7. Least developed region	4. Lower middle income	11475.0	Timor	16-Apr-20	0.0	0.0	
+217	776	TON	Tonga	Tonga	Oceania	6. Developing region	4. Lower middle income						
+218	780	TTO	Trinidad and Tobago	Trinidad and Tobago	North America	6. Developing region	2. High income: nonOECD	11544.0	Trinidad and Tobago	16-Apr-20	8.0	0.0	0.0
+219	788	TUN	Tunisia	Tunisia	Africa	6. Developing region	3. Upper middle income	11583.0	Tunisia	16-Apr-20	35.0	1.0	0.0
+220	792	TUR	Turkey	Turkey	Asia	4. Emerging region: MIKT	3. Upper middle income	11617.0	Turkey	16-Apr-20	1518.0	115.0	1000.0
+221	158	TWN	Taiwan	Taiwan	Asia	2. Developed region: nonG7	2. High income: nonOECD	11317.0	Taiwan	16-Apr-20	6.0	0.0	0.0
+222	834	TZA	Tanzania	Tanzania	Africa	7. Least developed region	5. Low income	11348.0	Tanzania	16-Apr-20	4.0	1.0	0.0
+223	800	UGA	Uganda	Uganda	Africa	7. Least developed region	5. Low income	11666.0	Uganda	16-Apr-20	0.0	0.0	
+224	804	UKR	Ukraine	Ukraine	Europe	6. Developing region	4. Lower middle income	11700.0	Ukraine	16-Apr-20	116.0	18.0	100.0
+225	858	URY	Uruguay	Uruguay	South America	5. Emerging region: G20	3. Upper middle income	12182.0	Uruguay	16-Apr-20	9.0	1.0	0.0
+226	840	USA	United States	United States	North America	1. Developed region: G7	1. High income: OECD	12018.0	United States	16-Apr-20	30985.0	4928.0	50000.0
+227	860	UZB	Uzbekistan	Uzbekistan	Asia	6. Developing region	4. Lower middle income	12214.0	Uzbekistan	16-Apr-20	4.0	0.0	0.0
+228	336	VAT	Vatican	Vatican	Europe	2. Developed region: nonG7	2. High income: nonOECD	12247.0	Vatican	16-Apr-20	0.0	0.0	
+229	670	VCT	St. Vin. and Gren.	Saint Vincent and the Grenadines	North America	6. Developing region	3. Upper middle income	9876.0	Saint Vincent and the Grenadines	16-Apr-20	0.0	0.0	
+230	862	VEN	Venezuela	Venezuela	South America	5. Emerging region: G20	3. Upper middle income	12280.0	Venezuela	16-Apr-20	9.0	0.0	0.0
+231	092	VGB	British Virgin Is.	British Virgin Islands	North America	2. Developed region: nonG7	1. High income: OECD	1906.0	British Virgin Islands	16-Apr-20	0.0	0.0	
+232	850	VIR	U.S. Virgin Is.	United States Virgin Islands	North America	6. Developing region	2. High income: nonOECD	12041.0	United States Virgin Islands	16-Apr-20	1.0	0.0	0.0
+233	704	VNM	Vietnam	Vietnam	Asia	5. Emerging region: G20	4. Lower middle income	12384.0	Vietnam	16-Apr-20	0.0	0.0	
+234	548	VUT	Vanuatu	Vanuatu	Oceania	7. Least developed region	4. Lower middle income						
+235	876	WLF	Wallis and Futuna Is.	Wallis and Futuna Islands	Oceania	6. Developing region	4. Lower middle income						
+236	882	WSM	Samoa	Samoa	Oceania	7. Least developed region	4. Lower middle income						
+237	887	YEM	Yemen	Yemen	Asia	7. Least developed region	4. Lower middle income	12823.0	Yemen	16-Apr-20	0.0	0.0	
+238	710	ZAF	South Africa	South Africa	Africa	5. Emerging region: G20	3. Upper middle income	10441.0	South Africa	16-Apr-20	34.0	7.0	0.0
+239	894	ZMB	Zambia	Zambia	Africa	7. Least developed region	4. Lower middle income	12852.0	Zambia	16-Apr-20	2.0	0.0	0.0
+240	716	ZWE	Zimbabwe	Zimbabwe	Africa	5. Emerging region: G20	5. Low income	12879.0	Zimbabwe	16-Apr-20	3.0	0.0	0.0

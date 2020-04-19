@@ -1,0 +1,1 @@
+npx rollup map/index.js --file map/bundle.js --format iife

@@ -49,6 +49,9 @@ if( elementClicked == true ) {
 }
 
 const onCountryClick = d =>{
+
+document.getElementById("buttons").style.display = "block";
+
   var TotalClicked;
 $("#total").click(function(){
   TotalClicked = true;

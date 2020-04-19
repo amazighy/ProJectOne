@@ -38,15 +38,6 @@ selectedColorValue=d;
 render();
 }
 
-var elementClicked;
-$("#total").click(function(){
-   elementClicked = true;
-});
-if( elementClicked == true ) {
-  $('.tot').show();
-}else{
-  $('.tot').hide()
-}
 
 const onCountryClick = d =>{
 

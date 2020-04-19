@@ -99,7 +99,7 @@ body {
 #buttons {
   margin-top: 10%;
   margin-left: 20%;
-  display: none;
+  display: block;
 }
 
 .btn {

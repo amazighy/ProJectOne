@@ -101,6 +101,7 @@ body {
   margin-top: 5%;
   margin-left: 18%;
   display: none;
+  
 }
 
 .btn {
@@ -128,10 +129,11 @@ body {
 }
 
 .popup-close{
+ 
   position: absolute;
   top: 20px; 
   right:35px;
- font-size: 100px;
+ 
   cursor: pointer;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -141,9 +143,10 @@ body {
 }
 
 #titletext{
-  margin-bottom: -15px;
+  margin-bottom: 0px;
   text-align: center;
-  padding-top:30px;
+  padding-top:23px;
+  background-color: red;
 
 }
 
@@ -155,22 +158,22 @@ body {
   }
   
   #buttons {
-    margin-bottom: 25%;
+    margin-bottom: 2%;
   }
 
   #toch > svg.dai{
-    margin-top: -40px;
+    margin-top: 25px;
   }
 
   #charts > div.half.bottom > svg.dai{
-    padding-top: 40px;
+    padding-top: 30px;
   } 
   #toch > svg.tot{
-    margin-top: -40px;
+    margin-top: 25px;
   }
 
   #charts > div.half.bottom > svg.tot{
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
 

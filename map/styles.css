@@ -140,29 +140,30 @@ body {
   display: none;
 }
 
+#titletext{
+  margin-bottom: -15px;
+  text-align: center;
+  padding-top:30px;
+
+}
+
 
 @media screen and (max-width:500px){
   body {
     overflow-x: hidden;
     overflow-y: scroll;
-  
   }
   
-
   #buttons {
     margin-bottom: 25%;
-    
-  }
-  #charts{
-    margin-right:12px;
-    padding-top: 15px ;
   }
 
-  .bottom{
-    margin-bottom: 40%; 
+  #toch > svg.dai{
+    margin-top: -40px;
   }
-  .half{
-    padding-top: 25;
-    padding-bottom: 25;
+
+  #charts > div.half.bottom > svg.dai{
+    padding-top: 40px;
   }
+
 }

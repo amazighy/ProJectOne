@@ -15,7 +15,7 @@ export const colorLegend = (selection, props) => {
       .attr('class', 'tick');
   groupsEnter
     .merge(groups)
-      .attr('transform', (d, i) => `translate( ${i * recWidth},120)`)
+      .attr('transform', (d, i) => `translate( ${i * recWidth+43},120)`)
       .attr('opacity', d => 
         (! selectedColorValue || d === selectedColorValue )
         ? 1
@@ -41,15 +41,11 @@ export const colorLegend = (selection, props) => {
       .attr('dy', '3.1em')
       .attr('x', textOffset);
 
-selection.append('text')
-.merge(groups.select('text'))
-  .attr('class', 'foo')
-  .text('NoData')
-  .attr('dy', '17.4em')
-  .attr('x', 0);
+  selection.append('text')
+  .merge(groups.select('text'))
+    .attr('class', 'foo')
+    .text('NoData')
+    .attr('dy', '17.4em')
+    .attr('x', recWidth+3);
 
 };
-// .on("mouseout", function(){
-//   d3.select(this)
-//     .style("background-color", "steelblue")
-// });

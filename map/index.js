@@ -119,7 +119,7 @@ const render =()=>{
   colorLegendG.call(colorLegend, {
     colorScale,
     recHeight:12,
-    recWidth: 40,
+    recWidth: 38,
     textOffset: 40,
     onClick,
     selectedColorValue

@@ -48,7 +48,7 @@
         .attr('class', 'tick');
     groupsEnter
       .merge(groups)
-        .attr('transform', (d, i) => `translate( ${i * recWidth},120)`)
+        .attr('transform', (d, i) => `translate( ${i * recWidth+43},120)`)
         .attr('opacity', d => 
           (! selectedColorValue || d === selectedColorValue )
           ? 1
@@ -74,18 +74,14 @@
         .attr('dy', '3.1em')
         .attr('x', textOffset);
 
-  selection.append('text')
-  .merge(groups.select('text'))
-    .attr('class', 'foo')
-    .text('NoData')
-    .attr('dy', '17.4em')
-    .attr('x', 0);
+    selection.append('text')
+    .merge(groups.select('text'))
+      .attr('class', 'foo')
+      .text('NoData')
+      .attr('dy', '17.4em')
+      .attr('x', recWidth+3);
 
   };
-  // .on("mouseout", function(){
-  //   d3.select(this)
-  //     .style("background-color", "steelblue")
-  // });
 
   const projection = d3.geoNaturalEarth1();
   const pathGenerator = d3.geoPath().projection(projection);
@@ -964,7 +960,7 @@
     colorLegendG.call(colorLegend, {
       colorScale,
       recHeight:12,
-      recWidth: 40,
+      recWidth: 38,
       textOffset: 40,
       onClick,
       selectedColorValue

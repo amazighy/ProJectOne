@@ -129,7 +129,7 @@ body {
 .popup-close{
   position: absolute;
   top: 5px; 
-  left:10 px;
+  left:60px;
   cursor: pointer;
   margin-bottom: 0;
   padding-bottom: 0;

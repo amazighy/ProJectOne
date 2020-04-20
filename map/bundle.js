@@ -905,8 +905,9 @@
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       elmntToView.scrollIntoView();
       
-      $(".dai").css({marginLeft:'-15px'});
-      $(".tot").css({marginLeft:'-15px'}); 
+      $(".dai").css({'margin-left':'200px'});
+      $(".tot").css({'margin-left':'200px'});
+      
     }
     
     document.getElementById("buttons").style.display = "block";

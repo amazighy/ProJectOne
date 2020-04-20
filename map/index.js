@@ -60,7 +60,8 @@ const onCountryClick = d =>{
     elmntToView.scrollIntoView();
     
     $(".dai").css({'margin-left':'200px'});
-    $(".tot").css({'margin-left':'200px'}); 
+    $(".tot").css({'margin-left':'200px'});
+    
   }
   
   document.getElementById("buttons").style.display = "block";

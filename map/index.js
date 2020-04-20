@@ -30,86 +30,71 @@ const colorValue = d=> d.properties.Catog;
 // state 
 let selectedColorValue;
 let features;
-let selectedCountryId;
+
 
 const onClick = d =>{
 selectedColorValue=d;
-
 render();
-}
+};
 
+var elementClicked;
+$("#total").click(function(){
+   elementClicked = true;
+});
+if( elementClicked == true ) {
+  $('.tot').show();
+}else{
+  $('.tot').hide()
+}
 
 const onCountryClick = d =>{
 
-document.getElementById("buttons").style.display = "block";
+  document.getElementById("buttons").style.display = "block";
 
   var TotalClicked;
-$("#total").click(function(){
-  TotalClicked = true;
-});
+  $("#total").click(function(){
+    TotalClicked = true;
+  });
 
-var DailyClicked;
-$("#daily").click(function(){
-  DailyClicked = true;
-});
+  var DailyClicked;
+  $("#daily").click(function(){
+    DailyClicked = true;
+  });
 
+  if( TotalClicked == true ) {
+    $('.tot').show();
+  }else if(TotalClicked == true && DailyClicked == true) {
+    $('.tot').hide();
+  };
 
-if( TotalClicked == true ) {
-  $('.tot').show();
-}else if(TotalClicked == true && DailyClicked == true) {
-  $('.tot').hide();
-}
+  if( DailyClicked == true ) {
+    $('.tot').hide();
+  }
 
+  const daily = document.querySelector('#daily');
+  daily.addEventListener('click',  renderDaily(d));
 
-if( DailyClicked == true ) {
-  $('.tot').hide();
-}
+  daily.addEventListener('click', ()=>{
+    $('.tot').hide();
+    $('.dai').show();
+    renderDaily(d);
+  });
 
+  const total = document.querySelector('#total');
+  total.addEventListener('click', renderTotal(d));
 
-
-// $("#daily").click(function()
-// {
-//    $(this).data('clicked', true);
-// });
-// if($("#daily").data('clicked'))
-// {
-//   $('.tot').hide()
-  
-// }
-
-
-  var daily = document.querySelector('#daily');
-  daily.addEventListener('click',  renderDaily(d))
-
-  // // renderDaily(d)
-  var total = document.querySelector('#total');
-  total.addEventListener('click', renderTotal(d))
-  // $('.tot').hide()
-  
-  var total = document.querySelector('#total');
   total.addEventListener('click', ()=>{
     $('.dai').hide();
-    $('.tot').show()
-     renderTotal(d)
-    })
-
-   var daily = document.querySelector('#daily');
-   daily.addEventListener('click', ()=>{
-    $('.tot').hide()
-    $('.dai').show()
-    renderDaily(d)
-    // event.stopImmediatePropagation()
-})
-
-
+    $('.tot').show();
+     renderTotal(d);
+  });
 
 };
 
 
 loadAndProcessData().then(countries =>{
   features=countries.features;
-  render()
- 
+  render();
 });
 
 const render =()=>{
@@ -118,23 +103,22 @@ const render =()=>{
   .domain(colorScale.domain().sort((a, b)=> b - a).reverse())
   .range(schemeYlOrBr[colorScale.domain().length]);
 
+  colorLegendG.call(colorLegend, {
+    colorScale,
+    recHeight:12,
+    recWidth: 40,
+    textOffset: 40,
+    onClick,
+    selectedColorValue
+  });
 
-colorLegendG.call(colorLegend, {
-  colorScale,
-  recHeight:12,
-  recWidth: 40,
-  textOffset: 40,
-  onClick,
-  selectedColorValue
-});
-
-choroplethMapG.call(choroplethMap, {
-  features,
-  colorScale,
-  colorValue,
-  selectedColorValue,
-  onCountryClick
-});
+  choroplethMapG.call(choroplethMap, {
+    features,
+    colorScale,
+    colorValue,
+    selectedColorValue,
+    onCountryClick
+  });
 
 }
 

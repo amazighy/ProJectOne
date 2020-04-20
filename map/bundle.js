@@ -893,65 +893,46 @@
   }
 
   const onCountryClick = d =>{
+
+    document.getElementById("buttons").style.display = "block";
+
     var TotalClicked;
-  $("#total").click(function(){
-    TotalClicked = true;
-  });
+    $("#total").click(function(){
+      TotalClicked = true;
+    });
 
-  var DailyClicked;
-  $("#daily").click(function(){
-    DailyClicked = true;
-  });
-
-
-  if( TotalClicked == true ) {
-    $('.tot').show();
-  }else if(TotalClicked == true && DailyClicked == true) {
-    $('.tot').hide();
-  }
+    var DailyClicked;
+    $("#daily").click(function(){
+      DailyClicked = true;
+    });
 
 
-  if( DailyClicked == true ) {
-    $('.tot').hide();
-  }
+    if( TotalClicked == true ) {
+      $('.tot').show();
+    }else if(TotalClicked == true && DailyClicked == true) {
+      $('.tot').hide();
+    }
+    if( DailyClicked == true ) {
+      $('.tot').hide();
+    }
 
-
-
-  // $("#daily").click(function()
-  // {
-  //    $(this).data('clicked', true);
-  // });
-  // if($("#daily").data('clicked'))
-  // {
-  //   $('.tot').hide()
-    
-  // }
-
-
-    var daily = document.querySelector('#daily');
+    const daily = document.querySelector('#daily');
     daily.addEventListener('click',  renderDaily(d));
 
-    // // renderDaily(d)
-    var total = document.querySelector('#total');
+    daily.addEventListener('click', ()=>{
+      $('.tot').hide();
+      $('.dai').show();
+      renderDaily(d);
+    });
+
+    const total = document.querySelector('#total');
     total.addEventListener('click', renderTotal(d));
-    // $('.tot').hide()
-    
-    var total = document.querySelector('#total');
+
     total.addEventListener('click', ()=>{
       $('.dai').hide();
       $('.tot').show();
        renderTotal(d);
-      });
-
-     var daily = document.querySelector('#daily');
-     daily.addEventListener('click', ()=>{
-      $('.tot').hide();
-      $('.dai').show();
-      renderDaily(d);
-      // event.stopImmediatePropagation()
-  });
-
-
+    });
 
   };
 

@@ -136,11 +136,10 @@ body {
   margin-bottom: 0;
   padding-bottom: 0;
   font-size: 30;
-  color:orange
+  color:orange;
+  display: none;
 }
-i{
-  font-size: 100px;
-}
+
 
 @media screen and (max-width:500px){
   body {
@@ -148,6 +147,7 @@ i{
     overflow-y: scroll;
   
   }
+  
 
   #buttons {
     margin-bottom: 25%;

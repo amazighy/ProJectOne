@@ -1,7 +1,8 @@
 body {
   padding: 0 !important;
   margin: 0 !important;
-  /* overflow: hidden; */
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .tick{
@@ -98,7 +99,7 @@ body {
 
 #buttons {
   margin-top: 5%;
-  margin-left: 25%;
+  margin-left: 18%;
   display: none;
 }
 
@@ -128,10 +129,33 @@ body {
 
 .popup-close{
   position: absolute;
-  top: 5px; 
-  right:40px;
+  top: 20px; 
+  right:35px;
+ font-size: 100px;
   cursor: pointer;
   margin-bottom: 0;
   padding-bottom: 0;
-  font-size: 16;
+  font-size: 30;
+  color:orange
+}
+i{
+  font-size: 100px;
+}
+
+@media screen and (max-width:500px){
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  
+  }
+
+  #buttons {
+    margin-bottom: 25%;
+    
+  }
+
+  .bottom{
+    margin-bottom: 40%;
+    
+  }
 }

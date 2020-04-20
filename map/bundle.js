@@ -115,7 +115,7 @@
           .attr('class', 'Title')
           // .attr('opacity',0)
           .attr('y',35)
-          .attr('x', 400)
+          .attr('x', 470)
           .attr('fill', 'black')
           .text('Confirmed COVID-19 deaths');
 
@@ -856,8 +856,6 @@
     
         }
 
-  /* *********************** Map svg set up*******************************/
-
   const svg$2 = d3.select('.map')
       .append('svg')
       .attr('height', 600)
@@ -894,20 +892,26 @@
 
 
   $('.popup-close').click(function() {
-    $('#map').removeClass('col-lg-8');
-    $('#map').addClass('col-lg-12');
-    $('#charts').removeClass('col-lg-4');
-    $('#charts').addClass('col-lg-0');
 
     $('html, body').animate({
       scrollTop: '0px'
     });
-
   });
 
 
 
   const onCountryClick = d =>{
+    
+    var elmntToView = document.getElementById("charts");
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      elmntToView.scrollIntoView();
+      
+      $(".dai").css({marginLeft:'-15px'});
+      $(".tot").css({marginLeft:'-15px'});
+      
+    }
+    
+
 
     document.getElementById("buttons").style.display = "block";
 
@@ -949,7 +953,6 @@
     });
 
   };
-
 
   loadAndProcessData().then(countries =>{
     features=countries.features;

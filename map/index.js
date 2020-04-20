@@ -10,9 +10,6 @@ import {choroplethMap} from './choroplethMap';
 import {renderDaily} from './renderDaily.js';
 import {renderTotal} from './renderTotal.js';
 
-
-/* *********************** Map svg set up*******************************/
-
 const svg = select('.map')
     .append('svg')
     .attr('height', 600)
@@ -49,21 +46,23 @@ if( elementClicked == true ) {
 
 
 $('.popup-close').click(function() {
-  $('#map').removeClass('col-lg-8');
-  $('#map').addClass('col-lg-12');
-  $('#charts').removeClass('col-lg-4');
-  $('#charts').addClass('col-lg-0');
-
   $('html, body').animate({
     scrollTop: '0px'
   });
-
 });
 
 
 
 const onCountryClick = d =>{
-
+  
+  var elmntToView = document.getElementById("charts");
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    elmntToView.scrollIntoView();
+    
+    $(".dai").css({marginLeft:'-15px'});
+    $(".tot").css({marginLeft:'-15px'}); 
+  }
+  
   document.getElementById("buttons").style.display = "block";
 
   var TotalClicked;
@@ -106,7 +105,6 @@ const onCountryClick = d =>{
 
 };
 
-
 loadAndProcessData().then(countries =>{
   features=countries.features;
   render();
@@ -134,7 +132,6 @@ const render =()=>{
     selectedColorValue,
     onCountryClick
   });
-
 }
 
 

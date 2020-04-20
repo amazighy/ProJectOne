@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
@@ -16,12 +17,15 @@
   <div class="main-wrapr">
 
     <div   id = 'map' class=" map section left col-lg-12 col-md-12 col-sm-6 col-xs-6 "></div>
+
     
     <div id= 'charts' class="section right col-lg-0 col-md-12 col-sm-12 col-xs-12" >
      
-     
+    
       <div id='toch' class="half top ">
-        <div class="popup-close">x</div>
+        <i class=" popup-close fas fa-angle-double-up fa-3x"></i>
+        
+        <!-- <div class="popup-close">x</div> -->
         <div id = 'buttons' class="btn-group">
           <button id='daily' class="btn daily">  Daily</button>
           <button   id='total' class="btn total  total">Total</button> 

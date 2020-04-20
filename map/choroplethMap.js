@@ -34,7 +34,7 @@ const countryPaths= g.selectAll('path')
         .attr('class', 'Title')
         // .attr('opacity',0)
         .attr('y',35)
-        .attr('x', 400)
+        .attr('x', 470)
         .attr('fill', 'black')
         .text('Confirmed COVID-19 deaths')
 

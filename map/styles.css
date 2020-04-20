@@ -158,7 +158,10 @@ i{
   }
 
   .bottom{
-    margin-bottom: 40%;
-    
+    margin-bottom: 40%; 
+  }
+  .half{
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }

@@ -98,7 +98,7 @@ body {
 
 #buttons {
   margin-top: 5%;
-  margin-left: 30%;
+  margin-left: 25%;
   display: none;
 }
 
@@ -129,7 +129,7 @@ body {
 .popup-close{
   position: absolute;
   top: 5px; 
-  right:70px;
+  right:40px;
   cursor: pointer;
   margin-bottom: 0;
   padding-bottom: 0;

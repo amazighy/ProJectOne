@@ -892,16 +892,17 @@
     $('.tot').hide();
   }
 
-  const close = document.querySelector('.popup-close');
 
-  close.addEventListener('click', () => {
-    function reSize() {
-      $('#map').removeClass('col-lg-8');
-      $('#map').addClass('col-lg-12');
-      $('#charts').removeClass('col-lg-4');
-      $('#charts').addClass('col-lg-0');
-  }reSize(); 
-   
+  $('.popup-close').click(function() {
+    $('#map').removeClass('col-lg-8');
+    $('#map').addClass('col-lg-12');
+    $('#charts').removeClass('col-lg-4');
+    $('#charts').addClass('col-lg-0');
+
+    $('html, body').animate({
+      scrollTop: '0px'
+    });
+
   });
 
 

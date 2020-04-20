@@ -59,8 +59,8 @@ const onCountryClick = d =>{
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     elmntToView.scrollIntoView();
     
-    $(".dai").css({marginLeft:'5px'});
-    $(".tot").css({marginLeft:'5px'}); 
+    $(".dai").css({marginLeft:'20px'});
+    $(".tot").css({marginLeft:'20px'}); 
   }
   
   document.getElementById("buttons").style.display = "block";

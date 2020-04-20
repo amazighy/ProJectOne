@@ -162,7 +162,7 @@ i{
     margin-bottom: 40%; 
   }
   .half{
-    margin-bottom: 5px;
-    margin-top: 5px;
+    padding-top: 25;
+    padding-bottom: 25;
   }
 }

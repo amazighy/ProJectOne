@@ -15,7 +15,7 @@ export function renderTotal(d){
   // reSize() 
   
       const countryName = d.properties.name 
-      const coutryDaily= + d.properties.Total 
+      const coutryTotal= + d.properties.Total 
       const codes = String(d.properties.Code)
   
       Promise
@@ -33,8 +33,8 @@ export function renderTotal(d){
         var country={ name:'', Total:0}
         var world={ name:'Rest of The World', Total:0}
         country.name=countryName
-        country.Total=coutryDaily
-        world.Total=sum
+        country.Total=coutryTotal
+        world.Total=sum-coutryTotal
         var data=[country,world]
       
         csvData.forEach(d => {

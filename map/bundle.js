@@ -479,7 +479,7 @@
           d3.csv("../data/covid.csv"),
         ])
         .then(([tsvData, csvData]) => {
-          //
+        
           tsvData.forEach(d => {
               d.Daily = +d.Daily;
           });
@@ -489,7 +489,7 @@
           var world={ name:'Rest of The World', Daily:0};
           country.name=countryName;
           country.Daily=coutryDaily;
-          world.Daily=sum;
+          world.Daily=sum-coutryDaily;
           var data=[country,world];
         
           csvData.forEach(d => {
@@ -816,7 +816,7 @@
     // reSize() 
     
         const countryName = d.properties.name; 
-        const coutryDaily= + d.properties.Total; 
+        const coutryTotal= + d.properties.Total; 
         const codes = String(d.properties.Code);
     
         Promise
@@ -834,8 +834,8 @@
           var country={ name:'', Total:0};
           var world={ name:'Rest of The World', Total:0};
           country.name=countryName;
-          country.Total=coutryDaily;
-          world.Total=sum;
+          country.Total=coutryTotal;
+          world.Total=sum-coutryTotal;
           var data=[country,world];
         
           csvData.forEach(d => {

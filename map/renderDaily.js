@@ -22,7 +22,7 @@ export function renderDaily(d){
         csv("../data/covid.csv"),
       ])
       .then(([tsvData, csvData]) => {
-        //
+      
         tsvData.forEach(d => {
             d.Daily = +d.Daily
         });
@@ -32,7 +32,7 @@ export function renderDaily(d){
         var world={ name:'Rest of The World', Daily:0}
         country.name=countryName
         country.Daily=coutryDaily
-        world.Daily=sum
+        world.Daily=sum-coutryDaily
         var data=[country,world]
       
         csvData.forEach(d => {

@@ -49,8 +49,8 @@ const tipFunc = tip()
   .attr('class', 'tip card')
   .html(d => {
     let content = `<div class="name">${d.data.name}</div>`;
-    content += `<div class="cost">£${d.data.Daily}</div>`;
-    content += `<div class="delete">Click slice to delete</div>`
+    content += `<div class="cost"> Dialy Deaths: ${d.data.Daily}</div>`;
+    
     return content;
   });
 

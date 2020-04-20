@@ -49,9 +49,9 @@ const tipFunc = tip()
   .attr('class', 'tip card')
   .html(d => {
     let content = `<div class="name">${d.data.name}</div>`;
-    content += `<div class="cost">£${d.data.Total}</div>`;
-    content += `<div class="delete">Click slice to delete</div>`
+    content += `<div class="cost"> Total Deaths: ${d.data.Total}</div>`;
     return content;
+    console.log(dat)
   });
 
 graph.call(tipFunc);

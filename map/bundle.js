@@ -354,8 +354,8 @@
     .attr('class', 'tip card')
     .html(d => {
       let content = `<div class="name">${d.data.name}</div>`;
-      content += `<div class="cost">£${d.data.Daily}</div>`;
-      content += `<div class="delete">Click slice to delete</div>`;
+      content += `<div class="cost"> Dialy Deaths: ${d.data.Daily}</div>`;
+      
       return content;
     });
 
@@ -699,8 +699,7 @@
     .attr('class', 'tip card')
     .html(d => {
       let content = `<div class="name">${d.data.name}</div>`;
-      content += `<div class="cost">£${d.data.Total}</div>`;
-      content += `<div class="delete">Click slice to delete</div>`;
+      content += `<div class="cost"> Total Deaths: ${d.data.Total}</div>`;
       return content;
     });
 

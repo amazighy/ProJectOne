@@ -892,7 +892,6 @@
 
 
   $('.popup-close').click(function() {
-
     $('html, body').animate({
       scrollTop: '0px'
     });
@@ -907,12 +906,9 @@
       elmntToView.scrollIntoView();
       
       $(".dai").css({marginLeft:'-15px'});
-      $(".tot").css({marginLeft:'-15px'});
-      
+      $(".tot").css({marginLeft:'-15px'}); 
     }
     
-
-
     document.getElementById("buttons").style.display = "block";
 
     var TotalClicked;
@@ -981,7 +977,6 @@
       selectedColorValue,
       onCountryClick
     });
-
   };
 
 }(d3, topojson));

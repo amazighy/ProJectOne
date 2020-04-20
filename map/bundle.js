@@ -876,9 +876,9 @@
   let selectedColorValue;
   let features;
 
+
   const onClick = d =>{
   selectedColorValue=d;
-
   render();
   };
 
@@ -891,6 +891,20 @@
   }else {
     $('.tot').hide();
   }
+
+  const close = document.querySelector('.popup-close');
+
+  close.addEventListener('click', () => {
+    function reSize() {
+      $('#map').removeClass('col-lg-8');
+      $('#map').addClass('col-lg-12');
+      $('#charts').removeClass('col-lg-4');
+      $('#charts').addClass('col-lg-0');
+  }reSize(); 
+   
+  });
+
+
 
   const onCountryClick = d =>{
 
@@ -905,7 +919,6 @@
     $("#daily").click(function(){
       DailyClicked = true;
     });
-
 
     if( TotalClicked == true ) {
       $('.tot').show();
@@ -940,7 +953,6 @@
   loadAndProcessData().then(countries =>{
     features=countries.features;
     render();
-   
   });
 
   const render =()=>{
@@ -949,23 +961,22 @@
     .domain(colorScale.domain().sort((a, b)=> b - a).reverse())
     .range(d3.schemeYlOrBr[colorScale.domain().length]);
 
+    colorLegendG.call(colorLegend, {
+      colorScale,
+      recHeight:12,
+      recWidth: 40,
+      textOffset: 40,
+      onClick,
+      selectedColorValue
+    });
 
-  colorLegendG.call(colorLegend, {
-    colorScale,
-    recHeight:12,
-    recWidth: 40,
-    textOffset: 40,
-    onClick,
-    selectedColorValue
-  });
-
-  choroplethMapG.call(choroplethMap, {
-    features,
-    colorScale,
-    colorValue,
-    selectedColorValue,
-    onCountryClick
-  });
+    choroplethMapG.call(choroplethMap, {
+      features,
+      colorScale,
+      colorValue,
+      selectedColorValue,
+      onCountryClick
+    });
 
   };
 

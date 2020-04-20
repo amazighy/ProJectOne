@@ -97,8 +97,8 @@ body {
 
 
 #buttons {
-  margin-top: 10%;
-  margin-left: 20%;
+  margin-top: 5%;
+  margin-left: 30%;
   display: none;
 }
 
@@ -124,4 +124,13 @@ body {
 
 #chartsD{
   display: none;
+}
+
+.popup-close{
+  position: absolute;
+  top: 5px; 
+  cursor: pointer;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 16;
 }

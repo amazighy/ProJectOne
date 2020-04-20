@@ -47,6 +47,21 @@ if( elementClicked == true ) {
   $('.tot').hide()
 }
 
+const close = document.querySelector('.popup-close');
+
+close.addEventListener('click', () => {
+  function reSize() {
+    $('#map').removeClass('col-lg-8');
+    $('#map').addClass('col-lg-12');
+    $('#charts').removeClass('col-lg-4');
+    $('#charts').addClass('col-lg-0');
+};
+reSize() 
+ 
+});
+
+
+
 const onCountryClick = d =>{
 
   document.getElementById("buttons").style.display = "block";

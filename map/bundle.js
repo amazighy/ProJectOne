@@ -905,8 +905,7 @@
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       elmntToView.scrollIntoView();
       
-      $(".dai").css({'margin-left':'200px'});
-      $(".tot").css({'margin-left':'200px'});
+     
       
     }
     

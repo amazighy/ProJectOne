@@ -895,6 +895,7 @@
 
 
   const onCountryClick = d =>{
+
     
     var elmntToView = document.getElementById("charts");
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {

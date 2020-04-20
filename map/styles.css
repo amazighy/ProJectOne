@@ -129,11 +129,9 @@ body {
 }
 
 .popup-close{
- 
   position: absolute;
   top: 20px; 
   right:35px;
- 
   cursor: pointer;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -149,6 +147,10 @@ body {
   background-color: red;
 
 }
+
+#charts > div.half.bottom > svg.dai{
+  padding-top: 20px;
+} 
 
 
 @media screen and (max-width:500px){

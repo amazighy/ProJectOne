@@ -51,7 +51,7 @@ const tipFunc = tip()
     let content = `<div class="name">${d.data.name}</div>`;
     content += `<div class="cost"> Total Deaths: ${d.data.Total}</div>`;
     return content;
-    console.log(dat)
+   
   });
 
 graph.call(tipFunc);

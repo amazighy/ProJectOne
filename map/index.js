@@ -50,20 +50,21 @@ $('.popup-close').click(()=> {
 
 const onCountryClick = d =>{
   
-
-  (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText='daily refresh':0;
+  
+ 
+  (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.name }`:0;
  
   var TotalClicked;
   var DailyClicked;
 
   $("#total").click(function(){
     TotalClicked = true;
-    titleText.innerText='total'
+    titleText.innerText=`Total Deaths in ${d.properties.name }`
   });
 
   $("#daily").click(function(){
     DailyClicked = true;
-    titleText.innerText='daily'
+    titleText.innerText=`Daily Deaths in ${d.properties.name }`
   });
 
   

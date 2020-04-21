@@ -9,7 +9,7 @@ import {
   } from 'd3';
 
 
-  const dims = { height: 300, width: 300, radius: 115};
+const dims = { height: 300, width: 300, radius: 115};
 const cent = { x: (dims.width / 2 + 5), y: (dims.height / 2 + 5)};
 
 // create svg container
@@ -51,6 +51,7 @@ const tipFunc = tip()
     let content = `<div class="name">${d.data.name}</div>`;
     content += `<div class="cost"> Total Deaths: ${d.data.Total}</div>`;
     return content;
+    
    
   });
 
@@ -112,7 +113,6 @@ export const pieChartT= (data) => {
 
 const arcTweenEnter = (d) => {
   var i = interpolate(d.endAngle-0.1, d.startAngle);
-
   return function(t) {
     d.startAngle = i(t);
     return arcPath(d);

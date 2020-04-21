@@ -701,6 +701,7 @@
       let content = `<div class="name">${d.data.name}</div>`;
       content += `<div class="cost"> Total Deaths: ${d.data.Total}</div>`;
       return content;
+      
      
     });
 
@@ -762,7 +763,6 @@
 
   const arcTweenEnter$1 = (d) => {
     var i = d3.interpolate(d.endAngle-0.1, d.startAngle);
-
     return function(t) {
       d.startAngle = i(t);
       return arcPath$1(d);
@@ -869,19 +869,15 @@
   // state 
   let selectedColorValue;
   let features;
-  let TotalInSide;
-  let TotalOutSide;
+
 
   const onClick = d =>{
   selectedColorValue=d;
   render();
   };
-
-  const titleText =document.querySelector('#titletext');
+  let TotalOutSide;
   $("#total").click(()=>TotalOutSide = true);
-  $("#daily").click(()=>TotalInSide = true);
-
-  ( TotalOutSide == true ) ? $('.tot').show(): $('.tot').hide();
+  (TotalOutSide == true) ? $('.tot').show(): $('.tot').hide();
 
 
   $('.popup-close').click(()=> {
@@ -890,25 +886,21 @@
     });
   });
 
+
   const onCountryClick = d =>{
     
-    
+    let TotalInSide;
    
-    (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.name }`:0;
+    const titleText =document.querySelector('#titletext');
    
-    var TotalClicked;
-    var DailyClicked;
-
-    $("#total").click(function(){
-      TotalClicked = true;
-      titleText.innerText=`Total Deaths in ${d.properties.name }`;
-    });
-
     $("#daily").click(function(){
-      DailyClicked = true;
-      titleText.innerText=`Daily Deaths in ${d.properties.name }`;
+      TotalInSide = true;
+      TotalOutSide=false;
     });
-
+   
+    (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.name}`:0;
+    (TotalOutSide==true) ?  titleText.innerText=`Total Deaths in ${d.properties.name}`:0;
+   
     
     var elmntToView = document.getElementById("charts");
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -918,11 +910,6 @@
     }
     
     document.getElementById("buttons").style.display = "block";
-
-    (TotalClicked == true ) ? $('.tot').show():
-    (TotalClicked == true && DailyClicked == true) ? $('.tot').hide():0;
-    
-    ( DailyClicked == true ) ? $('.tot').hide():0;
     
 
     const daily = document.querySelector('#daily');
@@ -931,6 +918,7 @@
     daily.addEventListener('click', ()=>{
       $('.tot').hide();
       $('.dai').show();
+      titleText.innerText=`Daily Deaths in ${d.properties.name }`;
       renderDaily(d);
     });
 
@@ -939,6 +927,7 @@
 
     total.addEventListener('click', ()=>{
       $('.dai').hide();
+      titleText.innerText=`Total Deaths in ${d.properties.name }`;
       $('.tot').show();
        renderTotal(d);
     });

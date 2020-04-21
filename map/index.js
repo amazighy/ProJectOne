@@ -27,19 +27,15 @@ const colorValue = d=> d.properties.Catog;
 // state 
 let selectedColorValue;
 let features;
-let TotalInSide;
-let TotalOutSide;
+
 
 const onClick = d =>{
 selectedColorValue=d;
 render();
 };
-
-const titleText =document.querySelector('#titletext');
+let TotalOutSide;
 $("#total").click(()=>TotalOutSide = true);
-$("#daily").click(()=>TotalInSide = true);
-
-( TotalOutSide == true ) ? $('.tot').show(): $('.tot').hide()
+(TotalOutSide == true) ? $('.tot').show(): $('.tot').hide()
 
 
 $('.popup-close').click(()=> {
@@ -48,25 +44,23 @@ $('.popup-close').click(()=> {
   });
 });
 
+
 const onCountryClick = d =>{
   
-  
- 
-  (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.name }`:0;
- 
+  let TotalInSide;
   var TotalClicked;
   var DailyClicked;
-
-  $("#total").click(function(){
-    TotalClicked = true;
-    titleText.innerText=`Total Deaths in ${d.properties.name }`
-  });
-
+ 
+  const titleText =document.querySelector('#titletext');
+ 
   $("#daily").click(function(){
-    DailyClicked = true;
-    titleText.innerText=`Daily Deaths in ${d.properties.name }`
+    TotalInSide = true
+    TotalOutSide=false
   });
-
+ 
+  (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.name}`:0;
+  (TotalOutSide==true) ?  titleText.innerText=`Total Deaths in ${d.properties.name}`:0;
+ 
   
   var elmntToView = document.getElementById("charts");
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -89,6 +83,7 @@ const onCountryClick = d =>{
   daily.addEventListener('click', ()=>{
     $('.tot').hide();
     $('.dai').show();
+    titleText.innerText=`Daily Deaths in ${d.properties.name }`;
     renderDaily(d);
   });
 
@@ -97,6 +92,7 @@ const onCountryClick = d =>{
 
   total.addEventListener('click', ()=>{
     $('.dai').hide();
+    titleText.innerText=`Total Deaths in ${d.properties.name }`
     $('.tot').show();
      renderTotal(d);
   });

@@ -877,41 +877,26 @@
   };
 
   const titleText =document.querySelector('#titletext');
+  $("#total").click(()=>TotalOutSide = true);
+  $("#daily").click(()=>TotalInSide = true);
 
-  $("#total").click(function(){
-    TotalOutSide = true;
-  });
+  ( TotalOutSide == true ) ? $('.tot').show(): $('.tot').hide();
 
 
-  $("#daily").click(function(){
-    TotalInSide = true;
-  });
-
-  if( TotalOutSide == true ) {
-    $('.tot').show();
-  }else {
-    $('.tot').hide();
-  }
-
-  $('.popup-close').click(function() {
+  $('.popup-close').click(()=> {
     $('html, body').animate({
       scrollTop: '0px'
     });
   });
 
   const onCountryClick = d =>{
+    console.log(d)
 
-    if (TotalOutSide !==true && TotalInSide!==true){
-      titleText.innerText='daily refresh'; 
-      console.log('daily refresh');
-    }
-   
-
+    (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText='daily refresh':0;
    
     var TotalClicked;
     var DailyClicked;
 
-   
     $("#total").click(function(){
       TotalClicked = true;
       titleText.innerText='total';
@@ -925,21 +910,18 @@
     
     var elmntToView = document.getElementById("charts");
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
       elmntToView.scrollIntoView();
-      
       document.querySelector(".popup-close").style.display = "block"; 
     }
     
     document.getElementById("buttons").style.display = "block";
 
-    if( TotalClicked == true ) {
-      $('.tot').show();
-    }else if(TotalClicked == true && DailyClicked == true) {
-      $('.tot').hide();
-    }
-    if( DailyClicked == true ) {
-      $('.tot').hide();
-    }
+    (TotalClicked == true ) ? $('.tot').show():
+    (TotalClicked == true && DailyClicked == true) ? $('.tot').hide():0;
+    
+    ( DailyClicked == true ) ? $('.tot').hide():0;
+    
 
     const daily = document.querySelector('#daily');
     daily.addEventListener('click',  renderDaily(d));

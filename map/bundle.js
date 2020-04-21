@@ -868,23 +868,30 @@
   // state 
   let selectedColorValue;
   let features;
-
+  let TotalInSide;
+  let TotalOutSide;
 
   const onClick = d =>{
   selectedColorValue=d;
   render();
   };
 
-  var elementClicked;
+  const titleText =document.querySelector('#titletext');
+
   $("#total").click(function(){
-     elementClicked = true;
+    TotalOutSide = true;
   });
-  if( elementClicked == true ) {
+
+
+  $("#daily").click(function(){
+    TotalInSide = true;
+  });
+
+  if( TotalOutSide == true ) {
     $('.tot').show();
   }else {
     $('.tot').hide();
   }
-
 
   $('.popup-close').click(function() {
     $('html, body').animate({
@@ -892,30 +899,38 @@
     });
   });
 
-
-
   const onCountryClick = d =>{
+
+    if (TotalOutSide !==true && TotalInSide!==true){
+      titleText.innerText='daily refresh'; 
+      console.log('daily refresh');
+    }
+   
+
+   
+    var TotalClicked;
+    var DailyClicked;
+
+   
+    $("#total").click(function(){
+      TotalClicked = true;
+      titleText.innerText='total';
+    });
+
+    $("#daily").click(function(){
+      DailyClicked = true;
+      titleText.innerText='daily';
+    });
 
     
     var elmntToView = document.getElementById("charts");
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       elmntToView.scrollIntoView();
       
-      document.querySelector(".popup-close").style.display = "block";
-      
+      document.querySelector(".popup-close").style.display = "block"; 
     }
     
     document.getElementById("buttons").style.display = "block";
-
-    var TotalClicked;
-    $("#total").click(function(){
-      TotalClicked = true;
-    });
-
-    var DailyClicked;
-    $("#daily").click(function(){
-      DailyClicked = true;
-    });
 
     if( TotalClicked == true ) {
       $('.tot').show();

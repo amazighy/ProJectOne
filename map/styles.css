@@ -149,9 +149,12 @@ body {
 }
 
 #charts > div.half.bottom > svg.dai{
-  padding-top: 20px;
+  padding-top: 30px;
 } 
 
+#charts > div.half.bottom > svg.tot{
+  padding-top: 30px;
+} 
 
 @media screen and (max-width:500px){
   body {

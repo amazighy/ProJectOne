@@ -126,6 +126,8 @@
           let content = `<div class="name">${d.properties.location }</div>`;
           content += `<div class="cost"> Total Deaths: ${+d.properties.total_deaths}</div>`;
           content += `<div class="cost"> Daily Deaths: ${+d.properties.new_deaths}</div>`;
+          content += `<div class="cost"> New  Cases: ${+d.properties.new_cases}</div>`;
+          content += `<div class="cost"> Total Cases: ${+d.properties.total_cases}</div>`;
           content += `<div class="more">Click for details</div>`;
           return content ;
       });

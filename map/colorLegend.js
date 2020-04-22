@@ -44,7 +44,8 @@ export const colorLegend = (selection, props) => {
   selection.append('text')
   .merge(groups.select('text'))
     .attr('class', 'foo')
-    .text('NoData')
+    .text('0')
+    .attr('opacity',0.5 )
     .attr('dy', '17.4em')
     .attr('x', recWidth+3);
 

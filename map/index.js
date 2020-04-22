@@ -100,15 +100,29 @@ const onCountryClick = d =>{
 };
 
 loadAndProcessData().then(countries =>{
+
   features=countries.features;
+//  countries.features.forEach(d=>{
+//     console.log(d.properties.Catog)
+//   }
+
+//   )
   render();
 });
 
 const render =()=>{
+
   colorScale
   .domain(features.map(colorValue))
-  .domain(colorScale.domain().sort((a, b)=> b - a).reverse())
-  .range(schemeYlOrBr[colorScale.domain().length]);
+  .domain(removeNaN(colorScale.domain()).sort((a, b)=> b - a).reverse())
+  .range(schemeYlOrBr[removeNaN(colorScale.domain()).length]);
+
+  
+    function removeNaN(arr) {
+      return arr.filter(Boolean);
+    }
+    
+  
 
   colorLegendG.call(colorLegend, {
     colorScale,

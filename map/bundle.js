@@ -8,17 +8,17 @@
         d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
       ])
       .then(([tsvData, topoJSONdata]) => {
-        
+        console.log(tsvData);
         const rowById = tsvData.reduce((accumulator, d) => {
           accumulator[d.MapID] = d;
           return accumulator;
         }, {});
          
-        // tsvData.forEach(d => {
-        //   d.Catog = +d.Catog
-        //   d.Total = +d.Total
-        //   d.Daily = +d.Daily
-        // });
+        tsvData.forEach(d => {
+          d.Catog = +d.Catog;
+          d.Total = +d.Total;
+          d.Daily = +d.Daily;
+        });
        
       
 
@@ -77,7 +77,8 @@
     selection.append('text')
     .merge(groups.select('text'))
       .attr('class', 'foo')
-      .text('NoData')
+      .text('0')
+      .attr('opacity',0.5 )
       .attr('dy', '17.4em')
       .attr('x', recWidth+3);
 
@@ -122,7 +123,6 @@
       const tipF = d3.tip()
       .attr('class', 'tip card')
       .html(d => {
-      
           let content = `<div class="name">${d.properties.location }</div>`;
           content += `<div class="cost"> Total Deaths: ${+d.properties.total_deaths}</div>`;
           content += `<div class="cost"> Daily Deaths: ${+d.properties.new_deaths}</div>`;
@@ -131,7 +131,8 @@
           content += `<div class="more">Click for details</div>`;
           return content ;
       });
-      countryPathsEnter.call(tipF);
+
+  countryPathsEnter.call(tipF);
       
 
   countryPaths    
@@ -933,15 +934,29 @@
   };
 
   loadAndProcessData().then(countries =>{
+
     features=countries.features;
+  //  countries.features.forEach(d=>{
+  //     console.log(d.properties.Catog)
+  //   }
+
+  //   )
     render();
   });
 
   const render =()=>{
+
     colorScale
     .domain(features.map(colorValue))
-    .domain(colorScale.domain().sort((a, b)=> b - a).reverse())
-    .range(d3.schemeYlOrBr[colorScale.domain().length]);
+    .domain(removeNaN(colorScale.domain()).sort((a, b)=> b - a).reverse())
+    .range(d3.schemeYlOrBr[removeNaN(colorScale.domain()).length]);
+
+    
+      function removeNaN(arr) {
+        return arr.filter(Boolean);
+      }
+      
+    
 
     colorLegendG.call(colorLegend, {
       colorScale,

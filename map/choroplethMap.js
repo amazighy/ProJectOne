@@ -46,7 +46,6 @@ const countryPathsEnter=countryPaths
     const tipF = tip()
     .attr('class', 'tip card')
     .html(d => {
-    
         let content = `<div class="name">${d.properties.location }</div>`;
         content += `<div class="cost"> Total Deaths: ${+d.properties.total_deaths}</div>`;
         content += `<div class="cost"> Daily Deaths: ${+d.properties.new_deaths}</div>`;
@@ -55,7 +54,8 @@ const countryPathsEnter=countryPaths
         content += `<div class="more">Click for details</div>`
         return content ;
     });
-    countryPathsEnter.call(tipF)
+
+countryPathsEnter.call(tipF)
     
 
 countryPaths    

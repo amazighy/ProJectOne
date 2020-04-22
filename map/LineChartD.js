@@ -8,7 +8,8 @@ import {
     axisBottom,
     timeFormat,
     axisLeft,
-    csv
+    csv,
+    tip,
   } from 'd3';
 
 
@@ -69,6 +70,16 @@ import {
 const x = scaleTime().range([0, graphWidth]);
 const y = scaleLinear().range([graphHeight, 0]);
 
+const tipCircleD = tip()
+  .attr('class', 'tip card')
+  .html(d => {
+    let content = `<div class="name">${d.date}</div>`;
+    content += `<div class="cost"> Dialy Deaths: </div>`;
+    
+    return content;
+  });
+  graph.call(tipCircleD);
+
 
 export const LineChartD = (data) => {
     // Title.attr('opacity',1)
@@ -115,6 +126,9 @@ export const LineChartD = (data) => {
           .transition().duration(100)
           .attr('r', 5)
           .attr('fill', '#662506');
+
+          tipCircleD.show(d, n[i]);
+       
         // set x dotted line coords (x1,x2,y1,y2)
         xDottedLine
           .attr('x1', x(new Date(d.date)))
@@ -135,6 +149,7 @@ export const LineChartD = (data) => {
           .transition().duration(100)
           .attr('r', 2)
           .attr('fill', '#ec7014')
+         tipCircleD.hide();
        
         // hide the dotted line group (opacity)
         dottedLines.style('opacity', 0)

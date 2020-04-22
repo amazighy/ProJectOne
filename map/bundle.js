@@ -223,6 +223,16 @@
   const x = d3.scaleTime().range([0, graphWidth]);
   const y = d3.scaleLinear().range([graphHeight, 0]);
 
+  const tipCircleD = d3.tip()
+    .attr('class', 'tip card')
+    .html(d => {
+      let content = `<div class="name">${d.date}</div>`;
+      content += `<div class="cost"> Dialy Deaths: </div>`;
+      
+      return content;
+    });
+    graph.call(tipCircleD);
+
 
   const LineChartD = (data) => {
       // Title.attr('opacity',1)
@@ -269,6 +279,9 @@
             .transition().duration(100)
             .attr('r', 5)
             .attr('fill', '#662506');
+
+            tipCircleD.show(d, n[i]);
+         
           // set x dotted line coords (x1,x2,y1,y2)
           xDottedLine
             .attr('x1', x(new Date(d.date)))
@@ -289,6 +302,7 @@
             .transition().duration(100)
             .attr('r', 2)
             .attr('fill', '#ec7014');
+           tipCircleD.hide();
          
           // hide the dotted line group (opacity)
           dottedLines.style('opacity', 0);
@@ -570,6 +584,18 @@
   const y$1 = d3.scaleLinear().range([graphHeight$1, 0]);
 
 
+  const tipCircle = d3.tip()
+    .attr('class', 'tip card')
+    .html(d => {
+      let content = `<div class="name">${d.date}</div>`;
+      content += `<div class="cost"> Dialy Deaths: </div>`;
+      
+      return content;
+    });
+    graph$2.call(tipCircle);
+
+
+
   const LineChartT = (data) => {
     // Title.attr('opacity',1)
 
@@ -615,6 +641,8 @@
           .transition().duration(100)
           .attr('r', 5)
           .attr('fill', '#662506');
+          tipCircle.show(d, n[i]);
+    
         // set x dotted line coords (x1,x2,y1,y2)
         xDottedLine$1
           .attr('x1', x$1(new Date(d.date)))
@@ -635,6 +663,7 @@
           .transition().duration(100)
           .attr('r', 2)
           .attr('fill', '#ec7014');
+        tipCircle.hide();
        
         // hide the dotted line group (opacity)
         dottedLines$1.style('opacity', 0);
@@ -963,7 +992,7 @@
         return arr.filter(Boolean);
       }
       
-    
+    console.log(moment());
 
     colorLegendG.call(colorLegend, {
       colorScale,

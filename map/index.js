@@ -122,7 +122,7 @@ const render =()=>{
       return arr.filter(Boolean);
     }
     
-  
+  console.log(moment())
 
   colorLegendG.call(colorLegend, {
     colorScale,

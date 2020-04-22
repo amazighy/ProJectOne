@@ -1,6 +1,5 @@
 import {
     select,
-    
     scaleTime,
     scaleLinear,
     line,
@@ -38,8 +37,8 @@ import {
   
   // line path generator
   const linen = line()
-    .x(d=>x(new Date(d.Date)))
-    .y(d=>y(d.Daily));
+    .x(d=>x(new Date(d.date)))
+    .y(d=>y(d.new_deaths));
   
   // line path element
   const path = graph.append('path');
@@ -75,11 +74,11 @@ export const LineChartD = (data) => {
     // Title.attr('opacity',1)
   
     // sort the data based on date objects
-    data.sort((a,b) => new Date(a.Date) - new Date(b.Date));
+    data.sort((a,b) => new Date(a.date) - new Date(b.date));
   
     // set scale domains
-    x.domain(extent(data, d => new Date(d.Date)));
-    y.domain([0, max(data, d =>  d.Daily)]);
+    x.domain(extent(data, d => new Date(d.date)));
+    y.domain([0, max(data, d =>  d.new_deaths)]);
   
     // update path data
     path.data([data])
@@ -97,15 +96,15 @@ export const LineChartD = (data) => {
   
     // update current points
     circles.attr('r', '2')
-      .attr('cx', d => x(new Date(d.Date)))
-      .attr('cy', d => y(d.Daily));
+      .attr('cx', d => x(new Date(d.date)))
+      .attr('cy', d => y(d.new_deaths));
   
     // add new points
     circles.enter()
       .append('circle')
         .attr('r', '2')
-        .attr('cx', d => x(new Date(d.Date)))
-        .attr('cy', d => y(d.Daily))
+        .attr('cx', d => x(new Date(d.date)))
+        .attr('cy', d => y(d.new_deaths))
         .attr('fill', '#ec7014')
         .attr('stroke', '#ec7014');
   
@@ -118,16 +117,16 @@ export const LineChartD = (data) => {
           .attr('fill', '#662506');
         // set x dotted line coords (x1,x2,y1,y2)
         xDottedLine
-          .attr('x1', x(new Date(d.Date)))
-          .attr('x2', x(new Date(d.Date)))
+          .attr('x1', x(new Date(d.date)))
+          .attr('x2', x(new Date(d.date)))
           .attr('y1', graphHeight)
-          .attr('y2', y(d.Daily));
+          .attr('y2', y(d.new_deaths));
         // set y dotted line coords (x1,x2,y1,y2)
         yDottedLine
           .attr('x1', 0)
-          .attr('x2', x(new Date(d.Date)))
-          .attr('y1', y(d.Daily))
-          .attr('y2', y(d.Daily));
+          .attr('x2', x(new Date(d.date)))
+          .attr('y1', y(d.new_deaths))
+          .attr('y2', y(d.new_deaths));
         // show the dotted line group (opacity)
         dottedLines.style('opacity', 1);
       })

@@ -14,22 +14,22 @@ export function renderTotal(d){
   // };
   // reSize() 
   
-      const countryName = d.properties.name 
-      const coutryTotal= + d.properties.Total 
-      const codes = String(d.properties.Code)
+      const countryName = d.properties.location 
+      const coutryTotal= + d.properties.total_deaths 
+      const codes = String(d.properties.location)
   
       Promise
       .all([
-        tsv('../data/CovidData.tsv'),
-        csv("../data/covid.csv"),
+        tsv('../data/CovidD1.tsv'),
+        csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
       ])
       .then(([tsvData, csvData]) => {
         //
         tsvData.forEach(d => {
-            d.Total = +d.Total
+            d.total_deaths = +d.total_deaths
         });
 
-        const sum =  tsvData.reduce((s, a) => s + a.Total, 0)
+        const sum =  tsvData.reduce((s, a) => s + a.total_deaths, 0)
         var country={ name:'', Total:0}
         var world={ name:'Rest of The World', Total:0}
         country.name=countryName
@@ -39,9 +39,9 @@ export function renderTotal(d){
       
         csvData.forEach(d => {
             d.date  = new Date(d.date)
-            d.Total = +d.Total
+            d.total_deaths = +d.total_deaths
   
-            csvData = csvData.filter(item => item.Code ==codes );
+            csvData = csvData.filter(item => item.location ==codes );
           });
           
           pieChartT(data)

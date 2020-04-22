@@ -58,8 +58,8 @@ const onCountryClick = d =>{
     TotalOutSide=false
   });
  
-  (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.name}`:0;
-  (TotalOutSide==true) ?  titleText.innerText=`Total Deaths in ${d.properties.name}`:0;
+  (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.location}`:0;
+  (TotalOutSide==true) ?  titleText.innerText=`Total Deaths in ${d.properties.location}`:0;
  
   
   var elmntToView = document.getElementById("charts");
@@ -83,7 +83,7 @@ const onCountryClick = d =>{
   daily.addEventListener('click', ()=>{
     $('.tot').hide();
     $('.dai').show();
-    titleText.innerText=`Daily Deaths in ${d.properties.name }`;
+    titleText.innerText=`Daily Deaths in ${d.properties.location }`;
     renderDaily(d);
   });
 
@@ -92,7 +92,7 @@ const onCountryClick = d =>{
 
   total.addEventListener('click', ()=>{
     $('.dai').hide();
-    titleText.innerText=`Total Deaths in ${d.properties.name }`
+    titleText.innerText=`Total Deaths in ${d.properties.location }`
     $('.tot').show();
      renderTotal(d);
   });

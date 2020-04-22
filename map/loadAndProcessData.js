@@ -3,7 +3,7 @@ import { tsv, json} from 'd3';
 export const loadAndProcessData = () => 
   Promise
     .all([
-      tsv('../data/CovidData.tsv'),
+      tsv('../data/CovidD1.tsv'),
       json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
     ])
     .then(([tsvData, topoJSONdata]) => {

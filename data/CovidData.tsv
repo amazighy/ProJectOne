@@ -1,4 +1,4 @@
-	MapID	Code	name	name_long	continent	economy	income_grp	index	Entity	Date	Total	Daily	Catog
+	MapID	Code	location	name_long	continent	economy	income_grp	index	Entity	Date	Total	Daily	Catog
 0	-99	IOA	Indian Ocean Ter.	Indian Ocean Territories	Asia	2. Developed region: nonG7	2. High income: nonOECD						
 1	-99	KAS	Siachen Glacier	Siachen Glacier	Asia	6. Developing region	4. Lower middle income						
 2	-99	KOS	Kosovo	Kosovo	Europe	6. Developing region	4. Lower middle income						

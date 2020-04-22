@@ -4,7 +4,7 @@
   const loadAndProcessData = () => 
     Promise
       .all([
-        d3.tsv('../data/CovidData.tsv'),
+        d3.tsv('../data/CovidD1.tsv'),
         d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
       ])
       .then(([tsvData, topoJSONdata]) => {
@@ -123,9 +123,9 @@
       .attr('class', 'tip card')
       .html(d => {
       
-          let content = `<div class="name">${d.properties.name }</div>`;
-          content += `<div class="cost"> Total Deaths: ${+d.properties.Total}</div>`;
-          content += `<div class="cost"> Daily Deaths: ${+d.properties.Daily}</div>`;
+          let content = `<div class="name">${d.properties.location }</div>`;
+          content += `<div class="cost"> Total Deaths: ${+d.properties.total_deaths}</div>`;
+          content += `<div class="cost"> Daily Deaths: ${+d.properties.new_deaths}</div>`;
           content += `<div class="more">Click for details</div>`;
           return content ;
       });
@@ -145,10 +145,7 @@
           selectedColorValue && selectedColorValue === colorValue(d))
           .on('click', (d) =>{
               onCountryClick(d);
-          // console.log(d.properties.name, 'is clicked')
           });
-
-
 
       countryPathsEnter
           .on('mouseover', (d,i,n) => {
@@ -157,8 +154,6 @@
           .on('mouseout', (d) => {
               tipF.hide();
           });
-
-
   };
 
   const margin = { top: 40, right: 30, bottom: 40, left: 50 };
@@ -186,8 +181,8 @@
     
     // line path generator
     const linen = d3.line()
-      .x(d=>x(new Date(d.Date)))
-      .y(d=>y(d.Daily));
+      .x(d=>x(new Date(d.date)))
+      .y(d=>y(d.new_deaths));
     
     // line path element
     const path = graph.append('path');
@@ -223,11 +218,11 @@
       // Title.attr('opacity',1)
     
       // sort the data based on date objects
-      data.sort((a,b) => new Date(a.Date) - new Date(b.Date));
+      data.sort((a,b) => new Date(a.date) - new Date(b.date));
     
       // set scale domains
-      x.domain(d3.extent(data, d => new Date(d.Date)));
-      y.domain([0, d3.max(data, d =>  d.Daily)]);
+      x.domain(d3.extent(data, d => new Date(d.date)));
+      y.domain([0, d3.max(data, d =>  d.new_deaths)]);
     
       // update path data
       path.data([data])
@@ -245,15 +240,15 @@
     
       // update current points
       circles.attr('r', '2')
-        .attr('cx', d => x(new Date(d.Date)))
-        .attr('cy', d => y(d.Daily));
+        .attr('cx', d => x(new Date(d.date)))
+        .attr('cy', d => y(d.new_deaths));
     
       // add new points
       circles.enter()
         .append('circle')
           .attr('r', '2')
-          .attr('cx', d => x(new Date(d.Date)))
-          .attr('cy', d => y(d.Daily))
+          .attr('cx', d => x(new Date(d.date)))
+          .attr('cy', d => y(d.new_deaths))
           .attr('fill', '#ec7014')
           .attr('stroke', '#ec7014');
     
@@ -266,16 +261,16 @@
             .attr('fill', '#662506');
           // set x dotted line coords (x1,x2,y1,y2)
           xDottedLine
-            .attr('x1', x(new Date(d.Date)))
-            .attr('x2', x(new Date(d.Date)))
+            .attr('x1', x(new Date(d.date)))
+            .attr('x2', x(new Date(d.date)))
             .attr('y1', graphHeight)
-            .attr('y2', y(d.Daily));
+            .attr('y2', y(d.new_deaths));
           // set y dotted line coords (x1,x2,y1,y2)
           yDottedLine
             .attr('x1', 0)
-            .attr('x2', x(new Date(d.Date)))
-            .attr('y1', y(d.Daily))
-            .attr('y2', y(d.Daily));
+            .attr('x2', x(new Date(d.date)))
+            .attr('y1', y(d.new_deaths))
+            .attr('y2', y(d.new_deaths));
           // show the dotted line group (opacity)
           dottedLines.style('opacity', 1);
         })
@@ -469,22 +464,23 @@
         $('#charts').addClass('col-lg-4');
     }  reSize(); 
     
-        const countryName = d.properties.name; 
-        const coutryDaily= + d.properties.Daily; 
-        const codes = String(d.properties.Code);
+        const countryName = d.properties.location; 
+        const coutryDaily= + d.properties.new_deaths; 
+        const codes = String(d.properties.location);
     
         Promise
         .all([
-          d3.tsv('../data/CovidData.tsv'),
-          d3.csv("../data/covid.csv"),
+          d3.tsv('../data/CovidD1.tsv'),
+          d3.csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
         ])
         .then(([tsvData, csvData]) => {
         
           tsvData.forEach(d => {
-              d.Daily = +d.Daily;
+              d.new_deaths = +d.new_deaths;
           });
 
-          const sum =  tsvData.reduce((s, a) => s + a.Daily, 0);
+          const sum =  tsvData.reduce((s, a) => s + a.new_deaths, 0);
+
           var country={ name:'', Daily:0};
           var world={ name:'Rest of The World', Daily:0};
           country.name=countryName;
@@ -494,9 +490,9 @@
         
           csvData.forEach(d => {
               d.date  = new Date(d.date);
-              d.Daily = +d.Daily;
+              d.new_deaths = +d.new_deaths;
     
-              csvData = csvData.filter(item => item.Code ==codes );
+              csvData = csvData.filter(item => item.location ==codes );
             });
             
             pieChartD(data);
@@ -531,8 +527,8 @@
 
   // line path generator
   const linen$1 = d3.line()
-    .x(d=>x$1(new Date(d.Date)))
-    .y(d=>y$1(d.Total));
+    .x(d=>x$1(new Date(d.date)))
+    .y(d=>y$1(d.total_deaths));
 
   // line path element
   const path$1 = graph$2.append('path');
@@ -568,11 +564,11 @@
     // Title.attr('opacity',1)
 
     // sort the data based on date objects
-    data.sort((a,b) => new Date(a.Date) - new Date(b.Date));
+    data.sort((a,b) => new Date(a.date) - new Date(b.date));
 
     // set scale domains
-    x$1.domain(d3.extent(data, d => new Date(d.Date)));
-    y$1.domain([0, d3.max(data, d =>  d.Total)]);
+    x$1.domain(d3.extent(data, d => new Date(d.date)));
+    y$1.domain([0, d3.max(data, d =>  d.total_deaths)]);
 
     // update path data
     path$1.data([data])
@@ -590,15 +586,15 @@
 
     // update current points
     circles.attr('r', '2')
-      .attr('cx', d => x$1(new Date(d.Date)))
-      .attr('cy', d => y$1(d.Total));
+      .attr('cx', d => x$1(new Date(d.date)))
+      .attr('cy', d => y$1(d.total_deaths));
 
     // add new points
     circles.enter()
       .append('circle')
         .attr('r', '2')
-        .attr('cx', d => x$1(new Date(d.Date)))
-        .attr('cy', d => y$1(d.Total))
+        .attr('cx', d => x$1(new Date(d.date)))
+        .attr('cy', d => y$1(d.total_deaths))
         .attr('fill', '#ec7014')
         .attr('stroke', '#ec7014');
 
@@ -611,16 +607,16 @@
           .attr('fill', '#662506');
         // set x dotted line coords (x1,x2,y1,y2)
         xDottedLine$1
-          .attr('x1', x$1(new Date(d.Date)))
-          .attr('x2', x$1(new Date(d.Date)))
+          .attr('x1', x$1(new Date(d.date)))
+          .attr('x2', x$1(new Date(d.date)))
           .attr('y1', graphHeight$1)
-          .attr('y2', y$1(d.Total));
+          .attr('y2', y$1(d.total_deaths));
         // set y dotted line coords (x1,x2,y1,y2)
         yDottedLine$1
           .attr('x1', 0)
-          .attr('x2', x$1(new Date(d.Date)))
-          .attr('y1', y$1(d.Total))
-          .attr('y2', y$1(d.Total));
+          .attr('x2', x$1(new Date(d.date)))
+          .attr('y1', y$1(d.total_deaths))
+          .attr('y2', y$1(d.total_deaths));
         // show the dotted line group (opacity)
         dottedLines$1.style('opacity', 1);
       })
@@ -815,22 +811,22 @@
     // };
     // reSize() 
     
-        const countryName = d.properties.name; 
-        const coutryTotal= + d.properties.Total; 
-        const codes = String(d.properties.Code);
+        const countryName = d.properties.location; 
+        const coutryTotal= + d.properties.total_deaths; 
+        const codes = String(d.properties.location);
     
         Promise
         .all([
-          d3.tsv('../data/CovidData.tsv'),
-          d3.csv("../data/covid.csv"),
+          d3.tsv('../data/CovidD1.tsv'),
+          d3.csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
         ])
         .then(([tsvData, csvData]) => {
           //
           tsvData.forEach(d => {
-              d.Total = +d.Total;
+              d.total_deaths = +d.total_deaths;
           });
 
-          const sum =  tsvData.reduce((s, a) => s + a.Total, 0);
+          const sum =  tsvData.reduce((s, a) => s + a.total_deaths, 0);
           var country={ name:'', Total:0};
           var world={ name:'Rest of The World', Total:0};
           country.name=countryName;
@@ -840,9 +836,9 @@
         
           csvData.forEach(d => {
               d.date  = new Date(d.date);
-              d.Total = +d.Total;
+              d.total_deaths = +d.total_deaths;
     
-              csvData = csvData.filter(item => item.Code ==codes );
+              csvData = csvData.filter(item => item.location ==codes );
             });
             
             pieChartT(data);
@@ -898,8 +894,8 @@
       TotalOutSide=false;
     });
    
-    (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.name}`:0;
-    (TotalOutSide==true) ?  titleText.innerText=`Total Deaths in ${d.properties.name}`:0;
+    (TotalOutSide !==true && TotalInSide!==true) ? titleText.innerText=`Daily Deaths in ${d.properties.location}`:0;
+    (TotalOutSide==true) ?  titleText.innerText=`Total Deaths in ${d.properties.location}`:0;
    
     
     var elmntToView = document.getElementById("charts");
@@ -918,7 +914,7 @@
     daily.addEventListener('click', ()=>{
       $('.tot').hide();
       $('.dai').show();
-      titleText.innerText=`Daily Deaths in ${d.properties.name }`;
+      titleText.innerText=`Daily Deaths in ${d.properties.location }`;
       renderDaily(d);
     });
 
@@ -927,7 +923,7 @@
 
     total.addEventListener('click', ()=>{
       $('.dai').hide();
-      titleText.innerText=`Total Deaths in ${d.properties.name }`;
+      titleText.innerText=`Total Deaths in ${d.properties.location }`;
       $('.tot').show();
        renderTotal(d);
     });

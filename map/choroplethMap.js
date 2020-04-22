@@ -47,9 +47,9 @@ const countryPathsEnter=countryPaths
     .attr('class', 'tip card')
     .html(d => {
     
-        let content = `<div class="name">${d.properties.name }</div>`;
-        content += `<div class="cost"> Total Deaths: ${+d.properties.Total}</div>`;
-        content += `<div class="cost"> Daily Deaths: ${+d.properties.Daily}</div>`;
+        let content = `<div class="name">${d.properties.location }</div>`;
+        content += `<div class="cost"> Total Deaths: ${+d.properties.total_deaths}</div>`;
+        content += `<div class="cost"> Daily Deaths: ${+d.properties.new_deaths}</div>`;
         content += `<div class="more">Click for details</div>`
         return content ;
     });
@@ -69,10 +69,7 @@ countryPaths
         selectedColorValue && selectedColorValue === colorValue(d))
         .on('click', (d) =>{
             onCountryClick(d)
-        // console.log(d.properties.name, 'is clicked')
         })
-
-
 
     countryPathsEnter
         .on('mouseover', (d,i,n) => {
@@ -81,6 +78,4 @@ countryPaths
         .on('mouseout', (d) => {
             tipF.hide();
         })
-
-
 }

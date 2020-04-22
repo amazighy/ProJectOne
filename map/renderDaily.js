@@ -12,22 +12,23 @@ export function renderDaily(d){
   };
   reSize() 
   
-      const countryName = d.properties.name 
-      const coutryDaily= + d.properties.Daily 
-      const codes = String(d.properties.Code)
+      const countryName = d.properties.location 
+      const coutryDaily= + d.properties.new_deaths 
+      const codes = String(d.properties.location)
   
       Promise
       .all([
-        tsv('../data/CovidData.tsv'),
-        csv("../data/covid.csv"),
+        tsv('../data/CovidD1.tsv'),
+        csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
       ])
       .then(([tsvData, csvData]) => {
       
         tsvData.forEach(d => {
-            d.Daily = +d.Daily
+            d.new_deaths = +d.new_deaths
         });
 
-        const sum =  tsvData.reduce((s, a) => s + a.Daily, 0)
+        const sum =  tsvData.reduce((s, a) => s + a.new_deaths, 0)
+
         var country={ name:'', Daily:0}
         var world={ name:'Rest of The World', Daily:0}
         country.name=countryName
@@ -37,9 +38,9 @@ export function renderDaily(d){
       
         csvData.forEach(d => {
             d.date  = new Date(d.date)
-            d.Daily = +d.Daily
+            d.new_deaths = +d.new_deaths
   
-            csvData = csvData.filter(item => item.Code ==codes );
+            csvData = csvData.filter(item => item.location ==codes );
           });
           
           pieChartD(data)

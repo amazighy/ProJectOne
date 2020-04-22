@@ -49,4 +49,11 @@ export const colorLegend = (selection, props) => {
     .attr('dy', '17.4em')
     .attr('x', recWidth+3);
 
+    selection.append('text')
+    .merge(groups.select('text'))
+      .attr('class', 'foo')
+      .text('Source :compiled by Our World in Data using official sources')
+      .attr('opacity',0.5 )
+      .attr('dy', '19.4em')
+      .attr('x', recWidth*8);
 };

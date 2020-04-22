@@ -8,7 +8,7 @@
         d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
       ])
       .then(([tsvData, topoJSONdata]) => {
-        console.log(tsvData);
+     
         const rowById = tsvData.reduce((accumulator, d) => {
           accumulator[d.MapID] = d;
           return accumulator;
@@ -82,13 +82,21 @@
       .attr('dy', '17.4em')
       .attr('x', recWidth+3);
 
-      selection.append('text')
-      .merge(groups.select('text'))
-        .attr('class', 'foo')
-        .text('Source :compiled by Our World in Data using official sources')
-        .attr('opacity',0.5 )
-        .attr('dy', '19.4em')
-        .attr('x', recWidth*8);
+    selection.append('text')
+    .merge(groups.select('text'))
+      .attr('class', 'foo')
+      .text('Source :compiled by Our World in Data using official sources')
+      .attr('opacity',0.5 )
+      .attr('dy', '19.4em')
+      .attr('x', recWidth*8);
+
+  selection.append('text')
+    .merge(groups.select('text'))
+      .attr('class', 'foo')
+      .text('Filter by catagory')
+      .attr('opacity',0.5 )
+      .attr('dy', '13.4em')
+      .attr('x', recWidth*5);
   };
 
   const projection = d3.geoNaturalEarth1();
@@ -226,8 +234,8 @@
   const tipCircleD = d3.tip()
     .attr('class', 'tip card')
     .html(d => {
-      let content = `<div class="name">${d.date}</div>`;
-      content += `<div class="cost"> Dialy Deaths: </div>`;
+      let content = `<div class="name">Date: ${moment(d.date).format("ddd MMM Mo")}</div>`;
+      content += `<div class="cost"> Daily Deaths:${d.new_deaths} </div>`;
       
       return content;
     });
@@ -587,8 +595,8 @@
   const tipCircle = d3.tip()
     .attr('class', 'tip card')
     .html(d => {
-      let content = `<div class="name">${d.date}</div>`;
-      content += `<div class="cost"> Dialy Deaths: </div>`;
+      let content = `<div class="name"> Date:${moment(d.date).format("ddd MMM Mo")}</div>`;
+      content += `<div class="cost"> Dialy Deaths:${d.total_deaths} </div>`;
       
       return content;
     });
@@ -973,10 +981,11 @@
 
     features=countries.features;
   //  countries.features.forEach(d=>{
-  //     console.log(d.properties.Catog)
+      console.log(features);
   //   }
 
-  //   )
+  const nanValues= features.filter( n=>features.properties.Catog==='');
+  console.log(nanValues);
     render();
   });
 
@@ -992,7 +1001,7 @@
         return arr.filter(Boolean);
       }
       
-    console.log(moment());
+
 
     colorLegendG.call(colorLegend, {
       colorScale,

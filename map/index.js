@@ -103,10 +103,11 @@ loadAndProcessData().then(countries =>{
 
   features=countries.features;
 //  countries.features.forEach(d=>{
-//     console.log(d.properties.Catog)
+    console.log(features)
 //   }
 
-//   )
+const nanValues= features.filter( n=>features.properties.Catog==='')
+console.log(nanValues)
   render();
 });
 
@@ -122,7 +123,7 @@ const render =()=>{
       return arr.filter(Boolean);
     }
     
-  console.log(moment())
+
 
   colorLegendG.call(colorLegend, {
     colorScale,

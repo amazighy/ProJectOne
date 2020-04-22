@@ -7,7 +7,7 @@ export const loadAndProcessData = () =>
       json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
     ])
     .then(([tsvData, topoJSONdata]) => {
-      console.log(tsvData)
+   
       const rowById = tsvData.reduce((accumulator, d) => {
         accumulator[d.MapID] = d;
         return accumulator;

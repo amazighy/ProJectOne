@@ -73,8 +73,8 @@ const y = scaleLinear().range([graphHeight, 0]);
 const tipCircleD = tip()
   .attr('class', 'tip card')
   .html(d => {
-    let content = `<div class="name">${d.date}</div>`;
-    content += `<div class="cost"> Dialy Deaths: </div>`;
+    let content = `<div class="name">Date: ${moment(d.date).format("ddd MMM Mo")}</div>`;
+    content += `<div class="cost"> Daily Deaths:${d.new_deaths} </div>`;
     
     return content;
   });

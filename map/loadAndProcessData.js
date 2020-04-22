@@ -7,17 +7,17 @@ export const loadAndProcessData = () =>
       json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
     ])
     .then(([tsvData, topoJSONdata]) => {
-      
+      console.log(tsvData)
       const rowById = tsvData.reduce((accumulator, d) => {
         accumulator[d.MapID] = d;
         return accumulator;
       }, {});
        
-      // tsvData.forEach(d => {
-      //   d.Catog = +d.Catog
-      //   d.Total = +d.Total
-      //   d.Daily = +d.Daily
-      // });
+      tsvData.forEach(d => {
+        d.Catog = +d.Catog
+        d.Total = +d.Total
+        d.Daily = +d.Daily
+      });
      
     
 

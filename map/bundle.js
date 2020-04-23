@@ -129,7 +129,7 @@
           .attr('y',35)
           .attr('x', 470)
           .attr('fill', 'black')
-          .text('Confirmed COVID-19 deaths');
+          .text('Confirmed COVID-19 deaths: April, 23rd');
 
   const countryPathsEnter=countryPaths
       .enter().append('path')
@@ -234,7 +234,7 @@
   const tipCircleD = d3.tip()
     .attr('class', 'tip card')
     .html(d => {
-      let content = `<div class="name">Date: ${moment(d.date).format("ddd MMM Do")}</div>`;
+      let content = `<div class="name">Date: ${moment(d.date).utc().format("ddd MMM Do")}</div>`;
       content += `<div class="cost"> Daily Deaths:${d.new_deaths} </div>`;
       
       return content;
@@ -506,7 +506,7 @@
           d3.csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
         ])
         .then(([tsvData, csvData]) => {
-        
+        console.log(tsvData);
           tsvData.forEach(d => {
               d.new_deaths = +d.new_deaths;
           });
@@ -595,7 +595,7 @@
   const tipCircle = d3.tip()
     .attr('class', 'tip card')
     .html(d => {
-      let content = `<div class="name"> Date:${moment(d.date).format("ddd MMM Do")}</div>`;
+      let content = `<div class="name"> Date:${moment(d.date).utc().format("ddd MMM Do")}</div>`;
       content += `<div class="cost"> Dialy Deaths:${d.total_deaths} </div>`;
       
       return content;

@@ -36,7 +36,7 @@ const countryPaths= g.selectAll('path')
         .attr('y',35)
         .attr('x', 470)
         .attr('fill', 'black')
-        .text('Confirmed COVID-19 deaths')
+        .text('Confirmed COVID-19 deaths: April, 23rd')
 
 const countryPathsEnter=countryPaths
     .enter().append('path')

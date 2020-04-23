@@ -22,7 +22,7 @@ export function renderDaily(d){
         csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
       ])
       .then(([tsvData, csvData]) => {
-      
+      console.log(tsvData)
         tsvData.forEach(d => {
             d.new_deaths = +d.new_deaths
         });

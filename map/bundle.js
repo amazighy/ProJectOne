@@ -88,7 +88,7 @@
       .text('Source :compiled by Our World in Data using official sources')
       .attr('opacity',0.5 )
       .attr('dy', '19.4em')
-      .attr('x', recWidth*8);
+      .attr('x', -8*recWidth+8);
 
   selection.append('text')
     .merge(groups.select('text'))

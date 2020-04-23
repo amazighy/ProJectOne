@@ -3,7 +3,7 @@ import { tsv, json} from 'd3';
 export const loadAndProcessData = () => 
   Promise
     .all([
-      tsv('../data/CovidD1.tsv'),
+      tsv('../data/CovidData.tsv'),
       json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
     ])
     .then(([tsvData, topoJSONdata]) => {
@@ -19,7 +19,7 @@ export const loadAndProcessData = () =>
         d.Daily = +d.Daily
       });
      
-    
+      console.log(tsvData)
 
       const countries = feature(topoJSONdata, topoJSONdata.objects.countries);
 

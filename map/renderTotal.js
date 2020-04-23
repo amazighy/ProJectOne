@@ -20,7 +20,7 @@ export function renderTotal(d){
   
       Promise
       .all([
-        tsv('../data/CovidD1.tsv'),
+        tsv('../data/CovidData.tsv'),
         csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
       ])
       .then(([tsvData, csvData]) => {
@@ -42,8 +42,9 @@ export function renderTotal(d){
             d.total_deaths = +d.total_deaths
   
             csvData = csvData.filter(item => item.location ==codes );
+            
           });
-          
+          console.log(csvData)
           pieChartT(data)
           LineChartT(csvData)
   

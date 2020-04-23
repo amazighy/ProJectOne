@@ -4,7 +4,7 @@
   const loadAndProcessData = () => 
     Promise
       .all([
-        d3.tsv('../data/CovidD1.tsv'),
+        d3.tsv('../data/CovidData.tsv'),
         d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
       ])
       .then(([tsvData, topoJSONdata]) => {
@@ -20,7 +20,7 @@
           d.Daily = +d.Daily;
         });
        
-      
+        console.log(tsvData);
 
         const countries = topojson.feature(topoJSONdata, topoJSONdata.objects.countries);
 
@@ -502,7 +502,7 @@
     
         Promise
         .all([
-          d3.tsv('../data/CovidD1.tsv'),
+          d3.tsv('../data/CovidData.tsv'),
           d3.csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
         ])
         .then(([tsvData, csvData]) => {
@@ -864,7 +864,7 @@
     
         Promise
         .all([
-          d3.tsv('../data/CovidD1.tsv'),
+          d3.tsv('../data/CovidData.tsv'),
           d3.csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
         ])
         .then(([tsvData, csvData]) => {
@@ -886,8 +886,9 @@
               d.total_deaths = +d.total_deaths;
     
               csvData = csvData.filter(item => item.location ==codes );
+              
             });
-            
+            console.log(csvData);
             pieChartT(data);
             LineChartT(csvData);
     
@@ -980,21 +981,28 @@
   loadAndProcessData().then(countries =>{
 
     features=countries.features;
-  //  countries.features.forEach(d=>{
-      console.log(features);
-  //   }
 
-  const nanValues= features.filter( n=>features.properties.Catog==='');
-  console.log(nanValues);
+    let feature = countries.features.filter(function (e) {
+      return e.properties.Catog !== 'nan';
+    });
+    //  feature.forEach(d => {
+    //    d.Catog = +d.Catog
+    // });
+    console.log(feature);
+
+      
+
     render();
   });
 
+
+  console.log(colorScale.domain());
   const render =()=>{
 
     colorScale
     .domain(features.map(colorValue))
     .domain(removeNaN(colorScale.domain()).sort((a, b)=> b - a).reverse())
-    .range(d3.schemeYlOrBr[removeNaN(colorScale.domain()).length]);
+     .range(d3.schemeYlOrBr[removeNaN(colorScale.domain()).length]);
 
     
       function removeNaN(arr) {

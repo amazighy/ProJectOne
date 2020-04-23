@@ -18,7 +18,7 @@ export function renderDaily(d){
   
       Promise
       .all([
-        tsv('../data/CovidD1.tsv'),
+        tsv('../data/CovidData.tsv'),
         csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/ecdc/full_data.csv"),
       ])
       .then(([tsvData, csvData]) => {

@@ -1,0 +1,242 @@
+MapID,Code,location,name_long,continent,economy,income_grp
+4,AFG,Afghanistan,Afghanistan,Asia,7. Least developed region,5. Low income
+248,ALD,Aland,Aland Islands,Europe,2. Developed region: nonG7,1. High income: OECD
+8,ALB,Albania,Albania,Europe,6. Developing region,4. Lower middle income
+12,DZA,Algeria,Algeria,Africa,6. Developing region,3. Upper middle income
+16,ASM,American Samoa,American Samoa,Oceania,6. Developing region,3. Upper middle income
+20,AND,Andorra,Andorra,Europe,2. Developed region: nonG7,2. High income: nonOECD
+24,AGO,Angola,Angola,Africa,7. Least developed region,3. Upper middle income
+660,AIA,Anguilla,Anguilla,North America,6. Developing region,3. Upper middle income
+10,ATA,Antarctica,Antarctica,Antarctica,6. Developing region,2. High income: nonOECD
+28,ATG,Antigua and Barbuda,Antigua and Barbuda,North America,6. Developing region,3. Upper middle income
+32,ARG,Argentina,Argentina,South America,5. Emerging region: G20,3. Upper middle income
+51,ARM,Armenia,Armenia,Asia,6. Developing region,4. Lower middle income
+533,ABW,Aruba,Aruba,North America,6. Developing region,2. High income: nonOECD
+36,ATC,Ashmore and Cartier Is.,Ashmore and Cartier Islands,Oceania,7. Least developed region,5. Low income
+36,AUS,Australia,Australia,Oceania,2. Developed region: nonG7,1. High income: OECD
+40,AUT,Austria,Austria,Europe,2. Developed region: nonG7,1. High income: OECD
+31,AZE,Azerbaijan,Azerbaijan,Asia,6. Developing region,3. Upper middle income
+44,BHS,Bahamas,Bahamas,North America,6. Developing region,2. High income: nonOECD
+48,BHR,Bahrain,Bahrain,Asia,6. Developing region,2. High income: nonOECD
+50,BGD,Bangladesh,Bangladesh,Asia,7. Least developed region,5. Low income
+52,BRB,Barbados,Barbados,North America,6. Developing region,2. High income: nonOECD
+112,BLR,Belarus,Belarus,Europe,6. Developing region,3. Upper middle income
+56,BEL,Belgium,Belgium,Europe,2. Developed region: nonG7,1. High income: OECD
+84,BLZ,Belize,Belize,North America,6. Developing region,4. Lower middle income
+204,BEN,Benin,Benin,Africa,7. Least developed region,5. Low income
+60,BMU,Bermuda,Bermuda,North America,2. Developed region: nonG7,2. High income: nonOECD
+64,BTN,Bhutan,Bhutan,Asia,7. Least developed region,4. Lower middle income
+68,BOL,Bolivia,Bolivia,South America,5. Emerging region: G20,4. Lower middle income
+70,BIH,Bosnia and Herzegovina,Bosnia and Herzegovina,Europe,6. Developing region,3. Upper middle income
+72,BWA,Botswana,Botswana,Africa,6. Developing region,3. Upper middle income
+86,IOT,Br. Indian Ocean Ter.,British Indian Ocean Territory,Seven seas (open ocean),2. Developed region: nonG7,2. High income: nonOECD
+76,BRA,Brazil,Brazil,South America,3. Emerging region: BRIC,3. Upper middle income
+92,VGB,British Virgin Islands,British Virgin Islands,North America,2. Developed region: nonG7,1. High income: OECD
+96,BRN,Brunei,Brunei Darussalam,Asia,6. Developing region,2. High income: nonOECD
+100,BGR,Bulgaria,Bulgaria,Europe,2. Developed region: nonG7,3. Upper middle income
+854,BFA,Burkina Faso,Burkina Faso,Africa,7. Least developed region,5. Low income
+108,BDI,Burundi,Burundi,Africa,7. Least developed region,5. Low income
+384,CIV,Cote d'Ivoire,Côte d'Ivoire,Africa,6. Developing region,4. Lower middle income
+116,KHM,Cambodia,Cambodia,Asia,7. Least developed region,5. Low income
+120,CMR,Cameroon,Cameroon,Africa,6. Developing region,4. Lower middle income
+124,CAN,Canada,Canada,North America,1. Developed region: G7,1. High income: OECD
+132,CPV,Cape Verde,Cape Verde,Africa,6. Developing region,4. Lower middle income
+136,CYM,Cayman Islands,Cayman Islands,North America,5. Emerging region: G20,2. High income: nonOECD
+140,CAF,Central African Republic,Central African Republic,Africa,7. Least developed region,5. Low income
+148,TCD,Chad,Chad,Africa,7. Least developed region,5. Low income
+152,CHL,Chile,Chile,South America,5. Emerging region: G20,3. Upper middle income
+156,CHN,China,China,Asia,3. Emerging region: BRIC,3. Upper middle income
+170,COL,Colombia,Colombia,South America,6. Developing region,3. Upper middle income
+174,COM,Comoros,Comoros,Africa,7. Least developed region,5. Low income
+178,COG,Congo,Republic of Congo,Africa,6. Developing region,4. Lower middle income
+184,COK,Cook Is.,Cook Islands,Oceania,6. Developing region,3. Upper middle income
+188,CRI,Costa Rica,Costa Rica,North America,5. Emerging region: G20,3. Upper middle income
+191,HRV,Croatia,Croatia,Europe,2. Developed region: nonG7,2. High income: nonOECD
+192,CUB,Cuba,Cuba,North America,5. Emerging region: G20,3. Upper middle income
+531,CUW,Curacao,Curaçao,North America,6. Developing region,2. High income: nonOECD
+196,CYP,Cyprus,Cyprus,Asia,6. Developing region,2. High income: nonOECD
+203,CZE,Czech Republic,Czech Republic,Europe,2. Developed region: nonG7,1. High income: OECD
+180,COD,Democratic Republic of Congo,Democratic Republic of the Congo,Africa,7. Least developed region,5. Low income
+408,PRK,Dem. Rep. Korea,Dem. Rep. Korea,Asia,7. Least developed region,5. Low income
+208,DNK,Denmark,Denmark,Europe,2. Developed region: nonG7,1. High income: OECD
+262,DJI,Djibouti,Djibouti,Africa,7. Least developed region,4. Lower middle income
+212,DMA,Dominica,Dominica,North America,6. Developing region,3. Upper middle income
+214,DOM,Dominican Republic,Dominican Republic,North America,6. Developing region,3. Upper middle income
+218,ECU,Ecuador,Ecuador,South America,6. Developing region,3. Upper middle income
+818,EGY,Egypt,Egypt,Africa,5. Emerging region: G20,4. Lower middle income
+222,SLV,El Salvador,El Salvador,North America,6. Developing region,4. Lower middle income
+226,GNQ,Equatorial Guinea,Equatorial Guinea,Africa,7. Least developed region,2. High income: nonOECD
+232,ERI,Eritrea,Eritrea,Africa,7. Least developed region,5. Low income
+233,EST,Estonia,Estonia,Europe,2. Developed region: nonG7,1. High income: OECD
+231,ETH,Ethiopia,Ethiopia,Africa,7. Least developed region,5. Low income
+234,FRO,Faeroe Islands,Faeroe Islands,Europe,2. Developed region: nonG7,2. High income: nonOECD
+238,FLK,Falkland Islands,Falkland Islands,South America,2. Developed region: nonG7,1. High income: OECD
+242,FJI,Fiji,Fiji,Oceania,6. Developing region,4. Lower middle income
+246,FIN,Finland,Finland,Europe,2. Developed region: nonG7,1. High income: OECD
+258,PYF,French Polynesia,French Polynesia,Oceania,6. Developing region,2. High income: nonOECD
+260,ATF,Fr. S. Antarctic Lands,French Southern and Antarctic Lands,Seven seas (open ocean),6. Developing region,2. High income: nonOECD
+250,FRA,France,France,Europe,1. Developed region: G7,1. High income: OECD
+266,GAB,Gabon,Gabon,Africa,6. Developing region,3. Upper middle income
+270,GMB,Gambia,The Gambia,Africa,7. Least developed region,5. Low income
+268,GEO,Georgia,Georgia,Asia,6. Developing region,4. Lower middle income
+276,DEU,Germany,Germany,Europe,1. Developed region: G7,1. High income: OECD
+288,GHA,Ghana,Ghana,Africa,6. Developing region,4. Lower middle income
+300,GRC,Greece,Greece,Europe,2. Developed region: nonG7,1. High income: OECD
+304,GRL,Greenland,Greenland,North America,2. Developed region: nonG7,2. High income: nonOECD
+308,GRD,Grenada,Grenada,North America,6. Developing region,3. Upper middle income
+316,GUM,Guam,Guam,Oceania,6. Developing region,2. High income: nonOECD
+320,GTM,Guatemala,Guatemala,North America,6. Developing region,4. Lower middle income
+831,GGY,Guernsey,Guernsey,Europe,2. Developed region: nonG7,2. High income: nonOECD
+324,GIN,Guinea,Guinea,Africa,7. Least developed region,5. Low income
+624,GNB,Guinea-Bissau,Guinea-Bissau,Africa,7. Least developed region,5. Low income
+328,GUY,Guyana,Guyana,South America,6. Developing region,4. Lower middle income
+332,HTI,Haiti,Haiti,North America,7. Least developed region,5. Low income
+334,HMD,Heard I. and McDonald Is.,Heard I. and McDonald Islands,Seven seas (open ocean),7. Least developed region,5. Low income
+340,HND,Honduras,Honduras,North America,6. Developing region,4. Lower middle income
+344,HKG,Hong Kong,Hong Kong,Asia,6. Developing region,2. High income: nonOECD
+348,HUN,Hungary,Hungary,Europe,2. Developed region: nonG7,1. High income: OECD
+352,ISL,Iceland,Iceland,Europe,2. Developed region: nonG7,1. High income: OECD
+356,IND,India,India,Asia,3. Emerging region: BRIC,4. Lower middle income
+-99,IOA,Indian Ocean Territories,Indian Ocean Territories,Asia,2. Developed region: nonG7,2. High income: nonOECD
+360,IDN,Indonesia,Indonesia,Asia,4. Emerging region: MIKT,4. Lower middle income
+364,IRN,Iran,Iran,Asia,5. Emerging region: G20,3. Upper middle income
+368,IRQ,Iraq,Iraq,Asia,6. Developing region,4. Lower middle income
+372,IRL,Ireland,Ireland,Europe,2. Developed region: nonG7,1. High income: OECD
+833,IMN,Isle of Man,Isle of Man,Europe,2. Developed region: nonG7,2. High income: nonOECD
+376,ISR,Israel,Israel,Asia,2. Developed region: nonG7,1. High income: OECD
+380,ITA,Italy,Italy,Europe,1. Developed region: G7,1. High income: OECD
+388,JAM,Jamaica,Jamaica,North America,6. Developing region,3. Upper middle income
+392,JPN,Japan,Japan,Asia,1. Developed region: G7,1. High income: OECD
+832,JEY,Jersey,Jersey,Europe,2. Developed region: nonG7,2. High income: nonOECD
+400,JOR,Jordan,Jordan,Asia,6. Developing region,3. Upper middle income
+398,KAZ,Kazakhstan,Kazakhstan,Asia,6. Developing region,3. Upper middle income
+404,KEN,Kenya,Kenya,Africa,5. Emerging region: G20,5. Low income
+296,KIR,Kiribati,Kiribati,Oceania,7. Least developed region,4. Lower middle income
+410,KOR,South Korea,Republic of Korea,Asia,4. Emerging region: MIKT,1. High income: OECD
+-99,KOS,Kosovo,Kosovo,Europe,6. Developing region,4. Lower middle income
+414,KWT,Kuwait,Kuwait,Asia,6. Developing region,2. High income: nonOECD
+417,KGZ,Kyrgyzstan,Kyrgyzstan,Asia,6. Developing region,5. Low income
+418,LAO,Laos,Lao PDR,Asia,7. Least developed region,4. Lower middle income
+428,LVA,Latvia,Latvia,Europe,2. Developed region: nonG7,3. Upper middle income
+422,LBN,Lebanon,Lebanon,Asia,6. Developing region,3. Upper middle income
+426,LSO,Lesotho,Lesotho,Africa,7. Least developed region,4. Lower middle income
+430,LBR,Liberia,Liberia,Africa,7. Least developed region,5. Low income
+434,LBY,Libya,Libya,Africa,6. Developing region,3. Upper middle income
+438,LIE,Liechtenstein,Liechtenstein,Europe,2. Developed region: nonG7,2. High income: nonOECD
+440,LTU,Lithuania,Lithuania,Europe,2. Developed region: nonG7,3. Upper middle income
+442,LUX,Luxembourg,Luxembourg,Europe,2. Developed region: nonG7,1. High income: OECD
+446,MAC,Macao,Macao,Asia,6. Developing region,2. High income: nonOECD
+807,MKD,Macedonia,Macedonia,Europe,6. Developing region,3. Upper middle income
+450,MDG,Madagascar,Madagascar,Africa,7. Least developed region,5. Low income
+454,MWI,Malawi,Malawi,Africa,7. Least developed region,5. Low income
+458,MYS,Malaysia,Malaysia,Asia,6. Developing region,3. Upper middle income
+462,MDV,Maldives,Maldives,Seven seas (open ocean),6. Developing region,3. Upper middle income
+466,MLI,Mali,Mali,Africa,7. Least developed region,5. Low income
+470,MLT,Malta,Malta,Europe,2. Developed region: nonG7,2. High income: nonOECD
+584,MHL,Marshall Is.,Marshall Islands,Oceania,6. Developing region,4. Lower middle income
+478,MRT,Mauritania,Mauritania,Africa,7. Least developed region,5. Low income
+480,MUS,Mauritius,Mauritius,Seven seas (open ocean),6. Developing region,3. Upper middle income
+484,MEX,Mexico,Mexico,North America,4. Emerging region: MIKT,3. Upper middle income
+583,FSM,Micronesia,Federated States of Micronesia,Oceania,6. Developing region,4. Lower middle income
+498,MDA,Moldova,Moldova,Europe,6. Developing region,4. Lower middle income
+492,MCO,Monaco,Monaco,Europe,2. Developed region: nonG7,2. High income: nonOECD
+496,MNG,Mongolia,Mongolia,Asia,6. Developing region,4. Lower middle income
+499,MNE,Montenegro,Montenegro,Europe,6. Developing region,3. Upper middle income
+500,MSR,Montserrat,Montserrat,North America,6. Developing region,4. Lower middle income
+504,MAR,Morocco,Morocco,Africa,6. Developing region,4. Lower middle income
+508,MOZ,Mozambique,Mozambique,Africa,7. Least developed region,5. Low income
+104,MMR,Myanmar,Myanmar,Asia,7. Least developed region,5. Low income
+-99,CYN,Northern Cyprus,Northern Cyprus,Asia,6. Developing region,3. Upper middle income
+580,MNP,Northern Mariana Islands,Northern Mariana Islands,Oceania,6. Developing region,2. High income: nonOECD
+516,NAM,Namibia,Namibia,Africa,6. Developing region,3. Upper middle income
+520,NRU,Nauru,Nauru,Oceania,6. Developing region,4. Lower middle income
+524,NPL,Nepal,Nepal,Asia,7. Least developed region,5. Low income
+528,NLD,Netherlands,Netherlands,Europe,2. Developed region: nonG7,1. High income: OECD
+540,NCL,New Caledonia,New Caledonia,Oceania,6. Developing region,2. High income: nonOECD
+554,NZL,New Zealand,New Zealand,Oceania,2. Developed region: nonG7,1. High income: OECD
+558,NIC,Nicaragua,Nicaragua,North America,6. Developing region,4. Lower middle income
+562,NER,Niger,Niger,Africa,7. Least developed region,5. Low income
+566,NGA,Nigeria,Nigeria,Africa,5. Emerging region: G20,4. Lower middle income
+570,NIU,Niue,Niue,Oceania,6. Developing region,3. Upper middle income
+574,NFK,Norfolk Island,Norfolk Island,Oceania,6. Developing region,4. Lower middle income
+578,NOR,Norway,Norway,Europe,2. Developed region: nonG7,1. High income: OECD
+512,OMN,Oman,Oman,Asia,6. Developing region,2. High income: nonOECD
+586,PAK,Pakistan,Pakistan,Asia,5. Emerging region: G20,4. Lower middle income
+585,PLW,Palau,Palau,Oceania,6. Developing region,3. Upper middle income
+275,PSX,Palestine,Palestine,Asia,6. Developing region,4. Lower middle income
+591,PAN,Panama,Panama,North America,6. Developing region,3. Upper middle income
+598,PNG,Papua New Guinea,Papua New Guinea,Oceania,6. Developing region,4. Lower middle income
+600,PRY,Paraguay,Paraguay,South America,5. Emerging region: G20,4. Lower middle income
+604,PER,Peru,Peru,South America,5. Emerging region: G20,3. Upper middle income
+608,PHL,Philippines,Philippines,Asia,5. Emerging region: G20,4. Lower middle income
+612,PCN,Pitcairn Is.,Pitcairn Islands,Oceania,7. Least developed region,5. Low income
+616,POL,Poland,Poland,Europe,2. Developed region: nonG7,1. High income: OECD
+620,PRT,Portugal,Portugal,Europe,2. Developed region: nonG7,1. High income: OECD
+630,PRI,Puerto Rico,Puerto Rico,North America,6. Developing region,2. High income: nonOECD
+634,QAT,Qatar,Qatar,Asia,6. Developing region,2. High income: nonOECD
+642,ROU,Romania,Romania,Europe,2. Developed region: nonG7,3. Upper middle income
+643,RUS,Russia,Russian Federation,Europe,3. Emerging region: BRIC,3. Upper middle income
+646,RWA,Rwanda,Rwanda,Africa,7. Least developed region,5. Low income
+239,SGS,S. Geo. and S. Sandw. Is.,South Georgia and South Sandwich Islands,Seven seas (open ocean),7. Least developed region,5. Low income
+728,SDS,South Sudan,South Sudan,Africa,7. Least developed region,5. Low income
+678,STP,Sao Tome and Principe,São Tomé and Principe,Africa,7. Least developed region,4. Lower middle income
+654,SHN,Saint Helena,Saint Helena,Seven seas (open ocean),6. Developing region,4. Lower middle income
+662,LCA,Saint Lucia,Saint Lucia,North America,6. Developing region,3. Upper middle income
+882,WSM,Samoa,Samoa,Oceania,7. Least developed region,4. Lower middle income
+674,SMR,San Marino,San Marino,Europe,2. Developed region: nonG7,2. High income: nonOECD
+682,SAU,Saudi Arabia,Saudi Arabia,Asia,2. Developed region: nonG7,2. High income: nonOECD
+686,SEN,Senegal,Senegal,Africa,7. Least developed region,4. Lower middle income
+688,SRB,Serbia,Serbia,Europe,6. Developing region,3. Upper middle income
+690,SYC,Seychelles,Seychelles,Seven seas (open ocean),6. Developing region,3. Upper middle income
+-99,KAS,Siachen Glacier,Siachen Glacier,Asia,6. Developing region,4. Lower middle income
+694,SLE,Sierra Leone,Sierra Leone,Africa,7. Least developed region,5. Low income
+702,SGP,Singapore,Singapore,Asia,6. Developing region,2. High income: nonOECD
+534,SXM,Sint Maarten (Dutch part),Sint Maarten,North America,6. Developing region,2. High income: nonOECD
+703,SVK,Slovakia,Slovakia,Europe,2. Developed region: nonG7,1. High income: OECD
+705,SVN,Slovenia,Slovenia,Europe,2. Developed region: nonG7,1. High income: OECD
+90,SLB,Solomon Is.,Solomon Islands,Oceania,7. Least developed region,4. Lower middle income
+706,SOM,Somalia,Somalia,Africa,7. Least developed region,5. Low income
+-99,SOL,Somaliland,Somaliland,Africa,6. Developing region,4. Lower middle income
+710,ZAF,South Africa,South Africa,Africa,5. Emerging region: G20,3. Upper middle income
+724,ESP,Spain,Spain,Europe,2. Developed region: nonG7,1. High income: OECD
+144,LKA,Sri Lanka,Sri Lanka,Asia,6. Developing region,4. Lower middle income
+659,KNA,Saint Kitts and Nevis,Saint Kitts and Nevis,North America,6. Developing region,2. High income: nonOECD
+666,SPM,St. Pierre and Miquelon,Saint Pierre and Miquelon,North America,2. Developed region: nonG7,3. Upper middle income
+670,VCT,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,North America,6. Developing region,3. Upper middle income
+652,BLM,St-Barthélemy,Saint-Barthélemy,North America,2. Developed region: nonG7,1. High income: OECD
+663,MAF,St-Martin,Saint-Martin,North America,6. Developing region,2. High income: nonOECD
+729,SDN,Sudan,Sudan,Africa,6. Developing region,4. Lower middle income
+740,SUR,Suriname,Suriname,South America,6. Developing region,3. Upper middle income
+748,SWZ,Swaziland,Swaziland,Africa,6. Developing region,4. Lower middle income
+752,SWE,Sweden,Sweden,Europe,2. Developed region: nonG7,1. High income: OECD
+756,CHE,Switzerland,Switzerland,Europe,2. Developed region: nonG7,1. High income: OECD
+760,SYR,Syria,Syria,Asia,6. Developing region,4. Lower middle income
+158,TWN,Taiwan,Taiwan,Asia,2. Developed region: nonG7,2. High income: nonOECD
+762,TJK,Tajikistan,Tajikistan,Asia,6. Developing region,5. Low income
+834,TZA,Tanzania,Tanzania,Africa,7. Least developed region,5. Low income
+764,THA,Thailand,Thailand,Asia,5. Emerging region: G20,3. Upper middle income
+626,TLS,Timor,Timor-Leste,Asia,7. Least developed region,4. Lower middle income
+768,TGO,Togo,Togo,Africa,7. Least developed region,5. Low income
+776,TON,Tonga,Tonga,Oceania,6. Developing region,4. Lower middle income
+780,TTO,Trinidad and Tobago,Trinidad and Tobago,North America,6. Developing region,2. High income: nonOECD
+788,TUN,Tunisia,Tunisia,Africa,6. Developing region,3. Upper middle income
+792,TUR,Turkey,Turkey,Asia,4. Emerging region: MIKT,3. Upper middle income
+795,TKM,Turkmenistan,Turkmenistan,Asia,6. Developing region,3. Upper middle income
+796,TCA,Turks and Caicos Islands,Turks and Caicos Islands,North America,6. Developing region,2. High income: nonOECD
+850,VIR,United States Virgin Islands,United States Virgin Islands,North America,6. Developing region,2. High income: nonOECD
+800,UGA,Uganda,Uganda,Africa,7. Least developed region,5. Low income
+804,UKR,Ukraine,Ukraine,Europe,6. Developing region,4. Lower middle income
+784,ARE,United Arab Emirates,United Arab Emirates,Asia,6. Developing region,2. High income: nonOECD
+826,GBR,United Kingdom,United Kingdom,Europe,1. Developed region: G7,1. High income: OECD
+840,USA,United States,United States,North America,1. Developed region: G7,1. High income: OECD
+858,URY,Uruguay,Uruguay,South America,5. Emerging region: G20,3. Upper middle income
+860,UZB,Uzbekistan,Uzbekistan,Asia,6. Developing region,4. Lower middle income
+548,VUT,Vanuatu,Vanuatu,Oceania,7. Least developed region,4. Lower middle income
+336,VAT,Vatican,Vatican,Europe,2. Developed region: nonG7,2. High income: nonOECD
+862,VEN,Venezuela,Venezuela,South America,5. Emerging region: G20,3. Upper middle income
+704,VNM,Vietnam,Vietnam,Asia,5. Emerging region: G20,4. Lower middle income
+732,SAH,W. Sahara,Western Sahara,Africa,7. Least developed region,5. Low income
+876,WLF,Wallis and Futuna Is.,Wallis and Futuna Islands,Oceania,6. Developing region,4. Lower middle income
+887,YEM,Yemen,Yemen,Asia,7. Least developed region,4. Lower middle income
+894,ZMB,Zambia,Zambia,Africa,7. Least developed region,4. Lower middle income
+716,ZWE,Zimbabwe,Zimbabwe,Africa,5. Emerging region: G20,5. Low income

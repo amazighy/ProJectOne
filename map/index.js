@@ -102,21 +102,28 @@ const onCountryClick = d =>{
 loadAndProcessData().then(countries =>{
 
   features=countries.features;
-//  countries.features.forEach(d=>{
-    console.log(features)
-//   }
 
-const nanValues= features.filter( n=>features.properties.Catog==='')
-console.log(nanValues)
+  let feature = countries.features.filter(function (e) {
+    return e.properties.Catog !== 'nan';
+  });
+  //  feature.forEach(d => {
+  //    d.Catog = +d.Catog
+  // });
+  console.log(feature);
+
+    
+
   render();
 });
 
+
+console.log(colorScale.domain());
 const render =()=>{
 
   colorScale
   .domain(features.map(colorValue))
   .domain(removeNaN(colorScale.domain()).sort((a, b)=> b - a).reverse())
-  .range(schemeYlOrBr[removeNaN(colorScale.domain()).length]);
+   .range(schemeYlOrBr[removeNaN(colorScale.domain()).length]);
 
   
     function removeNaN(arr) {

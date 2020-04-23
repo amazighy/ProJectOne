@@ -234,7 +234,7 @@
   const tipCircleD = d3.tip()
     .attr('class', 'tip card')
     .html(d => {
-      let content = `<div class="name">Date: ${moment(d.date).format("ddd MMM Mo")}</div>`;
+      let content = `<div class="name">Date: ${moment(d.date).format("ddd MMM Do")}</div>`;
       content += `<div class="cost"> Daily Deaths:${d.new_deaths} </div>`;
       
       return content;
@@ -595,7 +595,7 @@
   const tipCircle = d3.tip()
     .attr('class', 'tip card')
     .html(d => {
-      let content = `<div class="name"> Date:${moment(d.date).format("ddd MMM Mo")}</div>`;
+      let content = `<div class="name"> Date:${moment(d.date).format("ddd MMM Do")}</div>`;
       content += `<div class="cost"> Dialy Deaths:${d.total_deaths} </div>`;
       
       return content;

@@ -123,12 +123,12 @@
   const countryPaths= g.selectAll('path')
           .data(features);
 
-          const Title= selection.append('text')
+   const Title= selection.append('text')
           .attr('class', 'Title')
           .attr('y',35)
           .attr('x', 350)
           .attr('fill', 'black')
-          .text('Confirmed COVID-19 deaths: April, 24rd');
+          .text('Confirmed COVID-19 deaths: April, 25rd');
 
   const countryPathsEnter=countryPaths
       .enter().append('path')

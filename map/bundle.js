@@ -128,7 +128,7 @@
           .attr('y',35)
           .attr('x', 350)
           .attr('fill', 'black')
-          .text('Confirmed COVID-19 deaths: May, 5th');
+          .text('Confirmed COVID-19 deaths: May, 6th');
 
   const countryPathsEnter=countryPaths
       .enter().append('path')
